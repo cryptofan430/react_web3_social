@@ -4,6 +4,7 @@ import React from 'react';
 import CopAvatar from '../images/cop_avatar.png';
 import BinanceIcon from '../images/binance-coin-bnb-logo 1.png';
 import Button from './common/button';
+import NumberInput from './common/numberInput';
 
 // COMPONENT
 
@@ -29,8 +30,9 @@ export const CopTicket = () => (
             </div>
             <div className='cop-ticket-group'>
                 <div className='cop-ticket-button-group'>
-                    <input type={'number'}></input>
-                    <Button>Cop a ticket</Button>
+                    <NumberInput value={1} onChange={()=>{}}></NumberInput>
+                    <Button button_type="tk_outlined" onClick = {() => {}}>Cop a ticket</Button>
+                    
                 </div>
                 <div className='price'>
 
@@ -54,6 +56,10 @@ export const CopTicket = () => (
         </div>
         <div className='ticket-image'>
             <img src={ CopAvatar} alt ="avatar"></img>
+            <div className="sold">
+                <p>Tikkets sold:</p>
+                <p><span>2,000</span>/10,000</p>
+            </div>
         </div>
         
         

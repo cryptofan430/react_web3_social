@@ -10,10 +10,10 @@ export const Header = () => (
            <div className='logo'>
             <p>TIKKETS</p>
             </div>
-            <div className='nav-page'>
+            <div className='latest'>
             <p>Latest drop</p>
             </div>
-            <div className='nav-page'>
+            <div className='previous'>
             <p>Previous drop</p>
             </div> 
         </div>

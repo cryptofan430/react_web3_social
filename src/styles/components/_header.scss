@@ -9,14 +9,17 @@ header{
 }
 header .header-nav{
     display: flex;
+    width: 696px;
+    height: 41px;
+    
     margin-right: 488px;
-    div{
-        margin-right: 100px;
-    }
+    
 }
 header .header-nav .logo{
     width: 239px;
     height: 41px;
+    margin-right: 100px;
+    
     font-family: 'HorizonOutlined';
     font-style: normal;
     font-weight: normal;
@@ -28,8 +31,9 @@ header .header-nav .logo{
     color: #FFFFFF;
 }
 
-header .header-nav .nav-page{
-    
+header .header-nav div{
+    margin-right: 100px;
+    width: 112px;
     height: 38px;
     font-family: Poppins;
     font-style: normal;
@@ -37,7 +41,6 @@ header .header-nav .nav-page{
     font-size: 18px;
     line-height: 140%;
     /* or 25px */
-    
     
     align-items: center;
     

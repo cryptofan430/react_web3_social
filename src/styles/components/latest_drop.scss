@@ -62,7 +62,8 @@
 .cop-ticket .ticket-board .cop-ticket-group .cop-ticket-button-group{
     width: 317px;
     height: 60px;
-    border:  #FFF solid;
+    display: flex;
+    
 }
 .cop-ticket .ticket-board .cop-ticket-group .price{
     border-right: solid #9B9BA3;
@@ -134,6 +135,25 @@
     width: 100%;
     
 }
+
+.cop-ticket .ticket-image .sold{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;    
+    p{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+}
+
+
+
 .wallet{
     margin-left: 325px;
     margin-top: 378px;
@@ -173,5 +193,8 @@
     
 }
 .wallet .tickets{
-    margin-left: 66px;
+    
+    
+    margin: 50px 65px 0 66px;
+    
 }
