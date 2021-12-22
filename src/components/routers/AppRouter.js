@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 // IMPORT PROJECT REFERENCES
 
 import { Header } from '../Header/Header';
+import { Footer } from '../Footer/Footer';
 import { HomePage } from '../pages/HomePage';
 import { AboutPage } from '../pages/AboutPage';
 import { ZipCodesPage } from '../pages/ZipCodesPage';
@@ -23,6 +24,7 @@ export const AppRouter = () => (
                 <Route path='/about' component={AboutPage} />
                 <Redirect to="/" />
             </Switch>
+            <Footer />
         </Fragment>
     </BrowserRouter>
 );

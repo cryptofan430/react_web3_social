@@ -1,0 +1,56 @@
+.group-1 {
+    width: 886px;
+    margin: 0 auto;
+    position: relative;  
+}
+
+.group-1-image {
+    text-align: center;
+}
+
+.group-1-image::before {
+    content: "";
+    position: absolute;
+    width: 1662px;
+    height: 204.29px;
+    left: -380px;
+    top: 0px;
+    background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
+}
+
+.title {
+    width: 886px;
+    height: 183px;
+}
+
+.title-label {
+    font-family: Horizon;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description {
+    width: 722px;
+    height: 50px;
+}
+
+.description-label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.description-tikkets {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+}
