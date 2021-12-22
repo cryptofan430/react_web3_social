@@ -2,11 +2,12 @@
 
 import React from 'react';
 import CopAvatar from '../images/cop_avatar.png';
+import BinanceIcon from '../images/binance-coin-bnb-logo 1.png';
 // COMPONENT
 
 const Endsin = () => (
     <div className='ends-in'>
-        <p>Ends in:    5d   10h  30m  13s</p>
+        <span >Ends in:</span><span style={{color: '#5042FE'}} > &nbsp;&nbsp;&nbsp;5d&nbsp;&nbsp; 10h &nbsp;&nbsp;30m &nbsp;&nbsp;13s</span>
     </div>
 );
 
@@ -16,8 +17,8 @@ export const CopTicket = () => (
         
         <div className='ticket-board'>
             <Endsin />    
-            <div className='win-bored' style={{fontFamily:"Horizon"}}>
-                <p>Win Bored ape #4252</p>
+            <div className='win-bored' >
+                <span >WIN </span><span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}> BORED APE </span><span>#4252</span>
             </div>
             <div className='content'>
                 <p>We want everyone to have equal opportunity, 
@@ -34,8 +35,10 @@ export const CopTicket = () => (
                     <div className='name'>Price</div>
 
                     <div className='value'> 0.0062
-                    <i className="fab fa-bitcoin"></i>
+                        <span className='img'><img src={BinanceIcon}></img></span>
+                        
                     </div>
+
 
                 </div>
                 <div className='odds'>

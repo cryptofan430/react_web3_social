@@ -1,6 +1,66 @@
-.menu.selected {
-    color: tomato;
-    font-weight: bolder;
-    border-bottom: 2px solid tomato;
-    text-decoration: none;
+header{
+ 
+    width: 1443px;
+    height: 72px;
+    margin: 71px auto;
+    // margin: 71px 238px 0 239px;
+    display: flex;
+
+}
+header .header-nav{
+    display: flex;
+    margin-right: 488px;
+    div{
+        margin-right: 100px;
+    }
+}
+header .header-nav .logo{
+    width: 239px;
+    height: 41px;
+    font-family: 'HorizonOutlined';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+header .header-nav .nav-page{
+    
+    height: 38px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    
+    
+    align-items: center;
+    
+    color: #FFFFFF
+}
+
+header .hover-button{
+    
+    width: 259px;
+    height: 72px;
+    border: 1px solid #FFFFFF;
+    a{
+        font-family: Poppins;
+        
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 140%;
+        /* or 24px */
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF !important;
+    }
+    
 }

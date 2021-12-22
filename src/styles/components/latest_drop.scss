@@ -1,13 +1,20 @@
 
 .cop-ticket{
     padding-top: 413px;
+    margin-left: 388px;
+    margin-right: 368px;
     width: 1166px;
-    margin: 0 auto;
+    
     position: relative;
     display: flex;
 }
-.cop-ticket .ends-in{
-    
+
+
+.cop-ticket .ticket-board{
+    width: 854px;
+    height: 387px;
+}
+.cop-ticket .ticket-board .ends-in{
     width: 702px;
     height: 31px;
     font-family: 'Poppins', sans-serif;
@@ -19,18 +26,13 @@
 
 
     color: rgba(255, 255, 255, 0.5);
-
 }
-
-.cop-ticket .ticket-board{
-    width: 854px;
-    height: 350px;
-}
-.cop-ticket .win-bored{
+.cop-ticket .ticket-board .win-bored{
     width: 854px;
     height: 150px;
+    padding-right: 100px;
 
-    font-family: 'Horizon_outlined';
+    font-family: 'Horizon';
     font-style: normal;
     font-weight: bold;
     font-size: 65px;
@@ -41,7 +43,8 @@
     
 }
 .cop-ticket .ticket-board .content{
-    width: 584px;
+    margin-top: 16px;;
+    width: 597px;
     height: 81px;
     font-family: Poppins;
     font-style: normal;
@@ -51,19 +54,20 @@
     color: #FFFFFF;
 }
 .cop-ticket .ticket-board .cop-ticket-group{
-    width: 767px;
+    width: 702px;
     height: 60px;
     display: flex;
+    margin-top: 32px;
 }
 .cop-ticket .ticket-board .cop-ticket-group .cop-ticket-button-group{
     width: 317px;
     height: 60px;
-    border: #FFFFFF solid;
+    border:  #FFF solid;
 }
 .cop-ticket .ticket-board .cop-ticket-group .price{
-    border-right: solid #FFFFFF;
+    border-right: solid #9B9BA3;
     margin: auto;
-    padding-right: 99px;
+    padding-right: 64px;
 
     .name{
         font-family: Poppins;
@@ -88,7 +92,9 @@
         letter-spacing: 0.01em;
         color: #FFFFFF;
     }
-    
+    .img{
+        padding-left: 10px;
+    }
 }
 .cop-ticket .ticket-board .cop-ticket-group .odds{
     .name{
