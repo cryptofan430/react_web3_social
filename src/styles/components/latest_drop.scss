@@ -1,4 +1,24 @@
+body{
+    background-color: black;
+}
 .font-horizon{
     font-family: 'Horizon_outlined';
     font-size: 100px;
+}
+.ends-in{
+    position: absolute;
+    width: 702px;
+    height: 31px;
+    left: 389px;
+    top: 413.35px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+
+
+    color: rgba(255, 255, 255, 0.5);
 }
