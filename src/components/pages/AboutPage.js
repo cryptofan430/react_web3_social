@@ -5,11 +5,12 @@ import React from 'react';
 import '../../styles/components/latest_drop.scss'
 import { CopTicket } from '../CopTicket';
 import { WalletRank } from '../WalletRank';
+
 // COMPONENT
 
-const AboutPage = () => (
+function AboutPage () {
     
-    <main className="p-3 animated fadeIn">
+ return <main className="p-3 animated fadeIn">
         
             <CopTicket />
         
@@ -17,6 +18,6 @@ const AboutPage = () => (
             <WalletRank />
         
     </main>
-);
+}
 
-export { AboutPage };
+export  {AboutPage};

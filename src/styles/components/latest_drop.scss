@@ -152,9 +152,7 @@
     }
 }
 
-
-
-.wallet{
+.wallet-rank .wallet{
     margin-left: 325px;
     margin-top: 378px;
     width: 1289px;
@@ -167,7 +165,7 @@
     border-radius: 14px;
 
 }
-.wallet .field{
+.wallet-rank .wallet .field{
     margin: 40px 105px 0 93px;
     display: flex;
     p{
@@ -192,9 +190,15 @@
     }
     
 }
-.wallet .tickets{
-    
-    
+.wallet-rank .wallet .tickets{
+
     margin: 50px 65px 0 66px;
+    
+}
+.wallet-rank .page{
+    margin-top: 47px;
+    margin-right: 386px;
+    display: flex;
+    justify-content: flex-end;
     
 }

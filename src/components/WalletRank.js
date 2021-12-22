@@ -3,6 +3,7 @@
 import React from 'react';
 
 import Ticket from './common/ticket';
+import Pagination from './common/pagination/index';
 
 const ticketData = [
     {number:"1", address:"danieldalen.eth", up_down:"up", rank:"248"},
@@ -39,7 +40,7 @@ export const WalletRank = () => (
             
         </div>
         <div className='page'>
-            
+            <Pagination total={3} page={2}></Pagination>
         </div>
     </div>
 );
