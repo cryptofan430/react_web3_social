@@ -3,9 +3,11 @@ import "../../styles/components/footer.scss";
 
 export const Footer = () => (
     <div className="footer">
-        <div className="footer-logo">tikkets</div>
+        <div className="footer-logo">
+            <p>TIKKETS</p>
+        </div>
         <div className="footer-all-rights-reserved">
-            <a href="#">All rights reserved</a>
+            <p>All rights reserved</p>
         </div>
     </div>
 );

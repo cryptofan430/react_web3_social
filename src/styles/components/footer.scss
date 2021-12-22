@@ -1,0 +1,34 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 326px;
+    margin-bottom: 103px;
+}
+
+.footer-logo {
+    margin-left: 240px;
+}
+
+.footer-logo > p {
+    font-family: Horizon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;   
+}
+
+.footer-all-rights-reserved {
+    margin-right: 239px;
+}
+
+.footer-all-rights-reserved > p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
