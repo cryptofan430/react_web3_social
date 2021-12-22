@@ -134,3 +134,44 @@
     width: 100%;
     
 }
+.wallet{
+    margin-left: 325px;
+    margin-top: 378px;
+    width: 1289px;
+    height: 1109px;
+
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+
+}
+.wallet .field{
+    margin: 40px 105px 0 93px;
+    display: flex;
+    p{
+        font-family: Horizon;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 140%;
+        /* or 31px */
+        color: #FFFFFF;
+    }
+    .rank{
+        width: 207px;
+    }
+    .wallet-address{
+        width: 373px;
+    }
+    .tikkets{
+        
+        width: 373px;
+        text-align: right;
+    }
+    
+}
+.wallet .tickets{
+    margin-left: 66px;
+}

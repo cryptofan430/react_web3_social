@@ -1,0 +1,50 @@
+.ticket_item{
+    height: 72px;
+    border-radius: 1px;
+    background: #18192B;
+    display: block;
+    padding: 0 40px 0 27px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.ticket_item.dark{
+    background-color: #0F1021;
+
+    &:hover{
+        background-color: #0F1021de;
+    }
+}
+
+.ticket_item {
+    &:hover{
+        background: #18192bde;
+    }
+
+    span{
+        color: white;
+        line-height: 72px;
+        font-family: 'Poppins';
+        font-size: 22px;
+        font-weight: 200;
+
+        &.tick_address{
+            margin-left: 147px;
+        }
+
+        &.tick_count{
+            float: right;
+        }
+    }
+
+    i{
+        color: #53A76F;
+        line-height: 72px;
+        margin-left: 47px;
+    }
+
+    i.fa-arrow-down{
+        color: #D35F4C;
+    }
+}
