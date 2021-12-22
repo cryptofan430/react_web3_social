@@ -22,3 +22,37 @@ body{
 
     color: rgba(255, 255, 255, 0.5);
 }
+.win-bored{
+    position: absolute;
+    width: 854px;
+    height: 150px;
+    left: 388px;
+    top: 460px;
+
+    font-family: Horizon;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+}
+.cop-ticket .content{
+    position: absolute;
+    width: 584px;
+    height: 81px;
+    left: 389px;
+    top: 626px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 140%;
+}
+.cop-ticket .avatar img{
+    
+    width: 311px;
+    height: 311px;
+    
+}
