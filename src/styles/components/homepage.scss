@@ -9,7 +9,7 @@
         z-index: 1;
         margin-top: -100px;
     }
-
+    
     .description {
         width: 722px;
         height: 50px;
@@ -19,6 +19,10 @@
 
     .btns {
         margin-top: 37px;
+
+        .tk_full {
+            margin-left: 33px;
+        }
     }
 }
 
@@ -45,7 +49,7 @@
 
 .title > p > span {
     color: #040519;
-    -webkit-text-stroke:1px #FFFFFF;
+    -webkit-text-stroke: 0.3px #FFFFFF;
 }
 
 .title-label {   
@@ -118,8 +122,21 @@
         display: flex;
         align-items: center;
         letter-spacing: 0.01em;
-        color: #FFFFFF;
+        color: #FFFFFF;        
     }
+
+    .price-tikket-button .price .tikket-price > span:first-child {
+        margin-right: 13px;
+    }
+
+    .price-tikket-button .price .tikket-price > span:last-child {
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        line-height: 27px;
+        background: #111124;
+        border-radius: 15px;
+    }  
 
     .price-tikket-button .tikket-button {
         width: 239px;

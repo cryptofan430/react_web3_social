@@ -9,6 +9,7 @@ import Tikkets from '../../images/tikkets-final_2.png';
 // import Unnamed_9 from '../../images/unnamed-9.png';
 // import Unnamed_10 from '../../images/unnamed-10.png';
 import Unnamed_12 from '../../images/unnamed-12.png';
+import Binance_logo from '../../images/binance-coin-bnb-logo 1.png';
 
 
 const HomePage = () => (
@@ -25,8 +26,8 @@ const HomePage = () => (
                 <p className="description-label">Imagine having the chance to own an iconinc NFT? <span className="description-tikkets">Tikkets</span> allows everyone to win an rare non-fungible token for a fraction of the price.</p>
             </div>
             <div className="btns">
-                <Button button_type="tk_outlined" >But a Tikket</Button>
-                <Button button_type="tk_full" >Connect</Button>                
+                <Button button_type="tk_outlined" width="342.47px" height="72px">But a Tikket</Button>
+                <Button button_type="tk_full" width="342.47px" height="72px">Connect</Button>                
             </div>           
         </div>
         <div className="group-2">
@@ -41,10 +42,15 @@ const HomePage = () => (
                 <div className="price-tikket-button">
                     <div className="price">
                         <p className="tikket-label">Tikket price:</p>
-                        <p className="tikket-price"> 0.062 Icon</p>
+                        <p className="tikket-price">
+                            <span>0.062 </span> 
+                            <span>
+                                <img src={Binance_logo} alt="binance_logo" />
+                            </span>                            
+                        </p>
                     </div>
                     <div className="tikket-button">
-                        <butto>Buy a Tikket</butto>
+                        <Button button_type="tk_outlined" width="239px" height="63px">But a Tikket</Button>
                     </div>
                 </div>
             </div>
@@ -73,6 +79,15 @@ const HomePage = () => (
                     <p className="tikkets">tikkets</p>
                 </div>
             </div>
+        </div>
+        <div className="group-4">
+            <div className="faq-title">
+                <p>faq</p>
+            </div>
+            <div className="faq-details">
+
+            </div>
+
         </div>
     </div>
 );
