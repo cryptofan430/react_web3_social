@@ -11,7 +11,7 @@ import { AppRouter } from './routers/AppRouter';
 
 export const App = () => (
     <Provider store={createAppStore()}>
-        <div className="container">
+        <div className="app-container">
             <AppRouter />
         </div>
     </Provider>
