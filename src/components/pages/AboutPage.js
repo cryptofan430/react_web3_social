@@ -4,7 +4,7 @@ import React from 'react';
 
 import '../../styles/components/latest_drop.scss'
 import { CopTicket } from '../CopTicket';
-import { Rank } from '../Rank';
+import { WalletRank } from '../WalletRank';
 // COMPONENT
 
 const AboutPage = () => (
@@ -14,7 +14,7 @@ const AboutPage = () => (
             <CopTicket />
         
         
-            <Rank />
+            <WalletRank />
         
     </main>
 );

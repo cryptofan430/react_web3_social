@@ -3,6 +3,8 @@
 import React from 'react';
 import CopAvatar from '../images/cop_avatar.png';
 import BinanceIcon from '../images/binance-coin-bnb-logo 1.png';
+import Button from './common/button';
+
 // COMPONENT
 
 const Endsin = () => (
@@ -28,7 +30,7 @@ export const CopTicket = () => (
             <div className='cop-ticket-group'>
                 <div className='cop-ticket-button-group'>
                     <input type={'number'}></input>
-                    <button>Cop a ticket</button>
+                    <Button>Cop a ticket</Button>
                 </div>
                 <div className='price'>
 
