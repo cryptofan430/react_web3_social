@@ -12,10 +12,11 @@ const Endsin = () => (
 
 
 export const CopTicket = () => (
-    <div>
+    <div className='cop-ticket'>
+        
         <div className='ticket-board'>
-            <Endsin />
-            <div className='win-bored'>
+            <Endsin />    
+            <div className='win-bored' style={{fontFamily:"Horizon"}}>
                 <p>Win Bored ape #4252</p>
             </div>
             <div className='content'>

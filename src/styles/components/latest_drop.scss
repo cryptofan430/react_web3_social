@@ -1,13 +1,15 @@
+
 .cop-ticket{
-    
+    padding-top: 413px;
+    width: 1166px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
 }
-.ends-in{
-    position: absolute;
+.cop-ticket .ends-in{
+    
     width: 702px;
     height: 31px;
-    left: 389px;
-    top: 413.35px;
-
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -17,35 +19,107 @@
 
 
     color: rgba(255, 255, 255, 0.5);
+
 }
-.win-bored{
-    font-family: 'Horizon_outlined';
+
+.cop-ticket .ticket-board{
+    width: 854px;
+    height: 350px;
+}
+.cop-ticket .win-bored{
     width: 854px;
     height: 150px;
+
+    font-family: 'Horizon_outlined';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 75px;
+    align-items: center;
+    color: #FFFFFF;
     
-    color: white;
-    
-    font-size: 100px;
-    
-    display: flex;
     
 }
-.cop-ticket .content{
-    position: absolute;
+.cop-ticket .ticket-board .content{
     width: 584px;
     height: 81px;
-    left: 389px;
-    top: 626px;
-
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
     font-size: 19px;
     line-height: 140%;
+    color: #FFFFFF;
 }
-.cop-ticket .ticket-image img{
+.cop-ticket .ticket-board .cop-ticket-group{
+    width: 767px;
+    height: 60px;
+    display: flex;
+}
+.cop-ticket .ticket-board .cop-ticket-group .price{
+    border-right: solid #FFFFFF;
+    margin: auto;
+    padding-right: 99px;
+
+    .name{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+
+        letter-spacing: 0.01em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .value{
+        font-family: Causten Round;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 140%;
+        /* identical to box height, or 38px */
+        align-items: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
     
+}
+.cop-ticket .ticket-board .cop-ticket-group .odds{
+    .name{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+
+        letter-spacing: 0.01em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .value{
+        font-family: Causten Round;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 140%;
+        /* identical to box height, or 38px */
+        align-items: center;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+}
+
+.cop-ticket .ticket-image {
+    display: inline;
     width: 311px;
     height: 311px;
+    
+}
+
+.cop-ticket .ticket-image img{
+    
+    width: 100%;
     
 }

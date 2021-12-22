@@ -10,12 +10,12 @@ import { Rank } from '../Rank';
 const AboutPage = () => (
     
     <main className="p-3 animated fadeIn">
-        <CopTicket>
-
-        </CopTicket>
-        <Rank>
-            
-        </Rank>
+        
+            <CopTicket />
+        
+        
+            <Rank />
+        
     </main>
 );
 
