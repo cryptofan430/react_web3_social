@@ -7,16 +7,11 @@ import { Provider } from 'react-redux';
 
 import { createAppStore } from '../components/state/stores/AppStore';
 
-// IMPORT COMPONENTS
-
 import { AppRouter } from './routers/AppRouter';
-
-
-// COMPONENT
 
 export const App = () => (
     <Provider store={createAppStore()}>
-        <div className="container">
+        <div className="app-container">
             <AppRouter />
         </div>
     </Provider>
