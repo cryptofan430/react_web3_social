@@ -77,7 +77,7 @@ function Endsin() {
             </div>
             <div className='content'>
                 <p>We want everyone to have equal opportunity, 
-                especially those whod normally wouldnt have a change or voice 
+                especially those who&apos;d normally wouldn&apos;t have a change or voice 
                 in this space to own a iconic NFT</p>
             </div>
             <div className='cop-ticket-group'>
