@@ -19,7 +19,7 @@ export const Header = () => (
         </div>
 
        <div className='hover-button'>
-            <Button button_type="tk_full" onClick = {() => {}}>Connect</Button>
+            <Button button_type="tk_outlined" onClick = {() => {}}>Connect</Button>
        </div>
    </header>
 );

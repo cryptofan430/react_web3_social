@@ -28,14 +28,19 @@
 }
 .number-input{
     .arrow-group{
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        margin-top: -19px;
+        div{
+            height: 9px;
+        }
     }
     .arrow {
         border: solid black;
-        border-width: 0 3px 3px 0;
+        
+        border-width: 0 2px 2px 0;
         display: inline-block;
-        padding: 3px;
+        padding: 2px;
         
       }
       
