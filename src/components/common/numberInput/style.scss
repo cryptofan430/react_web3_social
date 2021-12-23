@@ -28,11 +28,11 @@
 
         a{
             height: 9px;
-            -webkit-transition: height 0.2s ease-out;
-            transition: height 0.2s ease-out;
+            // -webkit-transition: height 0.2s ease-out;
+            // transition: height 0.2s ease-out;
 
             &:hover{
-                height: 20px;
+              opacity:0.3;
             }
         }
      
@@ -42,8 +42,9 @@
         border-width: 0 2px 2px 0;
         display: inline-block;
         padding: 2px;
-        -webkit-transition: padding 0.2s ease-out;
-        transition: padding 0.2s ease-out;
+        
+        -webkit-transition: opacity 0.2s ease-out;
+        transition: opacity 0.2s ease-out;
         
       }
       

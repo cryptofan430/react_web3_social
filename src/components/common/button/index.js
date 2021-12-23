@@ -18,6 +18,7 @@ function Button(props) {
                 height,
                 width,
                 fontSize,
+                lineHeight: height
             }}>
             {children}
         </button>
