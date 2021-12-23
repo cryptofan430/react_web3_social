@@ -49,4 +49,8 @@
             height: auto;
         }
     }
+
+    .nft:not(:last-child) {
+        margin-right: 25px;
+    }
 }
