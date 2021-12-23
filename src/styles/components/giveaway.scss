@@ -1,65 +1,167 @@
-.horizon{
-    font-family: HorizonOutlined;
+.after {
+    padding: 0 240px;
+}
+
+.notify {
+    display: flex;
+    justify-content: space-between;
+}
+
+.joined-giveaway {
+    width: 894px;       
+    font-family: Horizon;
     font-style: normal;
-    font-weight: normal;
-    font-size: 65px;
-    line-height: 75px;
-    
-    align-items: center;
-    text-align: center;
-    
+    font-weight: bold;
+    font-size: 79px;
+    line-height: 91px;
     color: #FFFFFF;
+    margin-bottom: 0px;
+
+    span {
+        color: #040519;
+        -webkit-text-stroke: 0.5px #FFFFFF;
+        padding: 0 15px;
+    } 
 }
 
-.after{
-    margin-top: 289px;
-    .notify{
-        display: flex;
-        .earned{
-            display: flex;
-            color: #FFFFFF;
-            
-        }
-    }
-    .giveaway-list{
-        margin-top: 125px;
-        display: flex;
-        flex-direction: column;
+.earned {
+    width: 518px;
 
+    .text {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: right;
         color: #FFFFFF;
-        .title{
-            width: 381px;
-            height: 24px;
+        opacity: 0.5;
+        margin-bottom: 43px;
+    }
+
+    .amount {
+        text-align: right;
+        font-family: Horizon;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 79px;
+        line-height: 91px;
+        color: #FFFFFF;
+
+        span {
+            padding: 0 15px;
+            color: rgba(255, 255, 255, 0.3);
+        }       
+    }
+}
+
+.giveaway-list {
+    margin-top: 125px;
+}
+
+.active {
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.active > p.title {   
+    font-family: Horizon;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 140%;       
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-left: 27px;
+    margin-bottom: 37px;
+}
+
+.previous {
+    margin-top: 69px;
+}
+
+.previous > div.title {
+    font-family: Horizon;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 140%;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-left: 27px;
+}
+
+@media only screen and (max-width: 1919px) {
+    .after {
+        padding: 0 200px;
+    }   
     
-            font-family: Horizon;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 17px;
-            line-height: 140%;
-            opacity: 0.5;
-            /* identical to box height, or 24px */
-            align-items: center;
-    
+    .joined-giveaway {
+        width: 100%;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .earned {
+        width: 100%;
+
+        .text {
+            margin-bottom: 20px;
         }
-        .active{
-            margin-bottom: 37px;
-        }
-        .previous{
-            margin-bottom: 37px;
+
+        .amount {
+            font-size: 60px;
         }
     }
 }
 
-.horizon.giveaway{
-    width: 894px;
-    height: 183px;
+@media only screen and (max-width: 1439px) {
+    .after {
+        padding: 0 150px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .after {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1067px) {
+    .after {
+        padding: 0 50px;
+    }
+
+    .joined-giveaway {
+        width: 100%;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .earned {
+        .text {
+            margin-bottom: 0px;
+        }
+
+        .amount {
+            font-size: 45px;
+            line-height: 60px;
+        }
+    }
+}
+
+@media only screen and (max-width: 899px) {
     
-    margin-left: 239px;
-
-}
-.horizon.amount{
-    margin-top: 43px;
-    width: 278px;
-    height: 81px;
 }
 
+@media only screen and (max-width: 767px) {
+    
+}
+
+@media only screen and (max-width: 639px) {
+    
+}
+
+@media only screen and (max-width: 479px) {
+    
+}
