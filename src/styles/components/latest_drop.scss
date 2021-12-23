@@ -28,6 +28,7 @@
     color: rgba(255, 255, 255, 0.5);
 }
 .cop-ticket .ticket-board .win-bored{
+    margin-top: 16px;
     width: 854px;
     height: 150px;
     padding-right: 100px;
@@ -124,6 +125,7 @@
 }
 
 .cop-ticket .ticket-image {
+    margin-top: 38px;
     display: inline;
     width: 311px;
     height: 311px;
@@ -149,6 +151,9 @@
         display: flex;
         align-items: center;
         color: #FFFFFF;
+        .sold-num{
+            color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 

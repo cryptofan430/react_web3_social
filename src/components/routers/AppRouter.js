@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { Header } from '../Header/Header';
 import { Footer } from '../Footer/Footer';
 import { HomePage } from '../pages/HomePage';
-import { AboutPage } from '../pages/AboutPage';
+import { LatestDrop } from '../pages/LatestDrop';
 import { ZipCodesPage } from '../pages/ZipCodesPage';
 
 
@@ -21,7 +21,7 @@ export const AppRouter = () => (
             <Switch>
                 <Route path='/' component={HomePage} exact={true} />
                 <Route path='/zipcodes' component={ZipCodesPage} />
-                <Route path='/about' component={AboutPage} />
+                <Route path='/drop' component={LatestDrop} />
                 <Redirect to="/" />
             </Switch>
             <Footer />

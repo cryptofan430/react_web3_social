@@ -1,17 +1,17 @@
 // IMPORT PACKAGE REFERENCES
 
 import React, {useEffect, useState} from 'react';
-import CopAvatar from '../images/cop_avatar.png';
-import BinanceIcon from '../images/binance-coin-bnb-logo 1.png';
-import Button from './common/button';
-import NumberInput from './common/numberInput';
+import CopAvatar from '../../../images/cop_avatar.png';
+import BinanceIcon from '../../../images/binance-coin-bnb-logo 1.png';
+import Button from '../../common/button';
+import NumberInput from '../../common/numberInput';
 
 
 // COMPONENT
 function Endsin() {
     // const [seconds, setSeconds] = useState(0);
     // const dhms = '05:10:30:13';
-    const [timeLeft, settimeLeft] = useState(450000);
+    const [timeLeft, setTimeLeft] = useState(450000);
     
 
     function secondsToTime(secs){
@@ -37,10 +37,11 @@ function Endsin() {
     //     let a = time.le && time.split(':')
     //     return (+a[0]) * 60 * 60 * 24+ (+a[1]) * 60 * 60 + (+a[2]) * 60 + (+a[3]); 
     // }
+
   useEffect(() => {
     let interval = null;    
       interval = setInterval(() => {
-        settimeLeft(timeLeft => timeLeft - 1);
+        setTimeLeft(timeLeft => timeLeft - 1);
       }, 1000);
       
       
@@ -56,7 +57,18 @@ function Endsin() {
 }
 
  function CopTicket() {
-   
+   const [tickets, setTickets] = useState(10);
+
+   function handleIncrease () {
+    setTickets(num => num + 1);
+   }
+   function handleDecrease () {
+       if(tickets > 0)
+        setTickets(num => num - 1);
+       else{
+        setTickets(num => num );
+       }
+   }
     return <div className='cop-ticket'>
         <div className='ticket-board'>
             <Endsin />    
@@ -70,7 +82,7 @@ function Endsin() {
             </div>
             <div className='cop-ticket-group'>
                 <div className='cop-ticket-button-group'>
-                    <NumberInput value={1} onChange={()=>{}}></NumberInput>
+                    <NumberInput onIncrease={ () => {handleIncrease()} } onDecrease = { () => handleDecrease()} value={tickets}></NumberInput>
                     <Button button_type="tk_outlined" onClick = {() => {}}>Cop a ticket</Button>
                 </div>
                 <div className='price'>
@@ -89,7 +101,7 @@ function Endsin() {
             <img src={ CopAvatar} alt ="avatar"></img>
             <div className="sold">
                 <p>Tikkets sold:</p>
-                <p><span>2,000</span>/10,000</p>
+                <p><span className='sold-num'>2,000</span>/10,000</p>
             </div>
         </div>
         <div className='avatar'>

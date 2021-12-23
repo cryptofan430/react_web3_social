@@ -2,8 +2,8 @@
 
 import React from 'react';
 
-import Ticket from './common/ticket';
-import Pagination from './common/pagination/index';
+import Ticket from '../../common/ticket';
+import Pagination from '../../common/pagination/index';
 
 const ticketData = [
     {number:"1", address:"danieldalen.eth", up_down:"up", rank:"248"},
@@ -11,7 +11,6 @@ const ticketData = [
     {number:"3", address:"0x8E45cbB9bAf6fREG4d0D0d3A81DF478b22091e1f", up_down:"up", rank:"150"}
 ];
                 
-
 // COMPONENT
 
 export const WalletRank = () => (
