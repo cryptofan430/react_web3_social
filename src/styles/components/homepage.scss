@@ -88,6 +88,12 @@ img {
         justify-content: center;
         margin-top: 37px;
 
+        button {
+            width: 342.47px;
+            height: 72px;
+            font-size: 17px;
+        }
+
         .tk_full {
             margin-left: 33px;
         }
@@ -158,6 +164,12 @@ img {
         height: 63px; 
         box-sizing: border-box;
         margin-left: 71px;
+
+        button {
+            width: 239px;
+            height: 63px;
+            font-size: 17px;
+        }
     }
 }
 
@@ -328,6 +340,10 @@ img {
     .title {
         height: 183px;
     }
+
+    .mobile-title {
+        display: none;
+    }
 }
 
 .nfts {
@@ -352,6 +368,10 @@ img {
         height: 183px;
     }
 
+    .mobile-title {
+        display: none;
+    }
+
     .description {
         width: 1114px;
         height: 54px;
@@ -362,6 +382,12 @@ img {
 
 .group-6-btn {
     margin-top: 42px;
+
+    button {
+        width: 297.3px;
+        height: 72px;
+        font-size: 17px;
+    }
 }
 
 
@@ -380,11 +406,7 @@ img {
 
     .group-1 .description {
         width: 100%;
-    }
-
-    .group-1 .btns button {
-        width: 100%;
-    }
+    }   
 
     .group-2-component .title {
         height: auto;
@@ -899,7 +921,119 @@ img {
         display: flex;
         flex-direction: column;
         padding: 0 25px;
+
+        .faq-title {
+            font-size: 40px;
+        }
+
+        .faq-details {
+            margin-top: 50px;
+        }
+
+        .acc_item {
+            list-style: none;
+        }
+
+        .acc_content.acc-open {
+            margin-bottom: 5px;
+        }
     }
+
+    .group-5 {
+        margin-top: 230px;
+        padding: 0 25px;
+
+        .group-5-component {
+            text-align: initial;
+
+            .mobile-title {
+                display: block; 
+                width: 100%;
+                height: auto; 
+                font-family: Horizon;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 39px;
+                line-height: 45px;
+                color: #FFFFFF;
+            }
+
+            .mobile-title > span {
+                color: #040519;
+                -webkit-text-stroke: 0.3px #FFFFFF;               
+            }
+
+            .title {
+                display: none;
+            }
+    
+            .description {
+                margin-top: 30px;
+            }
+        }
+
+        .nfts {
+            margin-top: 47px;
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .nft:not(:last-child) {
+                margin-right: 0px;
+            }
+
+            .nft:nth-child(2n-1) {
+                margin-right: 50px;
+            }
+
+            .nft {
+                margin-bottom: 30px;
+            }
+
+            .nft .name {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .group-6 {
+        margin-top: 145px;
+        padding: 0 25px;
+
+        .group-6-component {
+            text-align: initial;
+
+            .mobile-title {
+                display: block;
+                width: 100%;
+                height: auto;  
+                font-family: Horizon;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 39px;
+                line-height: 45px;
+                color: #FFFFFF;
+            }
+
+            .mobile-title > span {
+                color: #040519;
+                -webkit-text-stroke: 0.3px #FFFFFF;                
+            }
+        
+            .title {
+                display: none;
+            }
+
+            .description {
+                margin-top: 30px;
+                padding: 0 10px;
+            }
+        }
+
+        .group-6-btn {
+            display: none;
+        }
+    }     
 }
 
 @media only screen and (max-width: 639px) {
@@ -934,6 +1068,20 @@ img {
         position: relative;
         bottom: 50px;    
     }
+
+    .group-3-wallets .mobile-wallet-details-title .ranking {       
+        width: 130px;
+    }
+
+    .group-3-wallets .mobile-wallet-details-title .address {   
+        width: 100px;
+    }
+
+    .group-3-wallets .mobile-wallet-details-title .tikkets {
+        width: 100px;      
+        position: absolute;
+        right: 40px;
+    }
 }
 
 @media only screen and (max-width: 479px) {
@@ -963,7 +1111,21 @@ img {
         background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
         transform: rotate(-180deg);
         z-index: 1;
-    }     
+    }    
+    
+    .group-3-wallets .mobile-wallet-details-title .ranking {       
+        width: 80px;
+    }
+
+    .group-3-wallets .mobile-wallet-details-title .address {   
+        width: 85px;
+    }
+
+    .group-3-wallets .mobile-wallet-details-title .tikkets {
+        width: 100px;      
+        position: absolute;
+        right: 25px;
+    }
 }
 
 @media only screen and (min-width: 375px) {
