@@ -17,17 +17,23 @@
     }
 }
 
+
 .ticket_item {
     &:hover{
         background: #18192bde;
     }
 
     span{
+        
         color: white;
         line-height: 72px;
         font-family: 'Poppins';
         font-size: 22px;
         font-weight: 200;
+
+        &.tick_number1{
+            padding: 0 3.66px;
+        }
 
         &.tick_address{
             margin-left: 147px;
@@ -46,5 +52,45 @@
 
     i.fa-arrow-down{
         color: #D35F4C;
+    }
+}
+
+.pull-left{
+    float: left;
+}
+
+@media screen and (max-width: 767px){
+    .ticket_item i{
+        margin-left: 27px;
+    }
+
+    .ticket_item span.tick_address {
+        margin-left: 75px;
+    }
+}
+
+@media screen and (max-width: 639px){
+    
+    .ticket_item span.tick_address {
+        margin-left: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 479px){
+    .ticket_item{
+        padding: 0 15px;
+        
+        i{
+            margin-left: 15px;
+        }
+
+        span.tick_address {
+            margin-left: 25px;
+        }
     }
 }

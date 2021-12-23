@@ -38,7 +38,11 @@ img {
     width: 886px;
     text-align: center;
     margin: 0 auto;
-    position: relative;    
+    position: relative;   
+    
+    .mobile-title {
+        display: none;
+    }
 
     .title {         
         position: relative;
@@ -96,11 +100,7 @@ img {
 
     .title {       
         height: 183px;
-    }
-
-    .description {
-        margin-top: -20px;
-    }
+    }  
 
     .price-tikket-button {
         display: flex;
@@ -177,6 +177,12 @@ img {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.group-2-image .tikket-sold p > span::after {
+    content: "/";
+    padding: 5px;
+    color: #FFFFFF;
+}
+
 .group-3 {    
     margin-top: 432px;
     display: flex;
@@ -191,6 +197,10 @@ img {
 
     .title {
         height: 183px;
+    }
+
+    .description {
+        padding: 0 10px;
     }
 }
 
@@ -318,14 +328,101 @@ img {
 
     .title {
         width: 1184px;
+        height: 183px;
     }
 
     .description {
         width: 1114px;
+        height: 54px;
         margin: 0 auto;
+        padding: 0 15px;
     }
 }
 
 .group-6-btn {
     margin-top: 42px;
+}
+
+
+@media only screen and (max-width: 1919px) {
+    .main {
+        padding: 0 200px;
+    }
+
+    .group-1, .group-2, .group-3, .group-4, .group-5, .group-6 {
+        width: 100%;
+    }
+
+    .group-2-component .title {
+        height: auto;
+    }
+
+    .group-3-component .title {
+        height: auto;
+    }
+
+    .group-5-component .title {
+        height: auto;
+    }
+
+    .group-6-component .title {
+        height: auto;
+    }
+
+    .group-2-component, .group-3-component, .group-5-component, .group-6-component {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+    
+}
+
+@media only screen and (max-width: 1067px) {
+    
+}
+
+@media only screen and (max-width: 899px) {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    
+}
+
+@media only screen and (max-width: 639px) {
+    
+}
+
+@media only screen and (max-width: 479px) {
+    .group-1 {
+        width: 100%;
+
+        .title {
+            display: none;
+        }
+
+        .mobile-title {
+            display: block;          
+            width: 322px;
+            height: 232px; 
+            font-family: Horizon;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 58px;          
+            align-items: center;
+            color: #FFFFFF;
+            margin: 0 auto;
+
+            span {
+                color: #040519;
+                -webkit-text-stroke: 0.3px #FFFFFF;
+            }
+        }
+    }
 }

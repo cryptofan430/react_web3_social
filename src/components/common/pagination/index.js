@@ -6,11 +6,12 @@ import './style.scss';
 function Pagination(props) {
     const {total, page, onClick } = props;
     return <ul className="tk_pagination">
-        <li className="prev_li" onClick={onClick}><a><i className="fa fa-angle-left"></i><span>Prev</span></a></li> 
+        <li className="prev_li" onClick={()=> onClick("prev")}><a><i className="fa fa-angle-left"></i><span>Prev</span></a></li> 
         {Array.from(Array(total), (e, i) => {
-            return <li key={i} onClick={onClick} className={(i + 1) == page ? "number_li active" : "number_li"}><a>{i + 1}</a></li>
-        })} 
-        <li className="next_li" onClick={onClick}><a><span>Next</span><i className="fa fa-angle-right"></i></a></li>
+            return <li key={i} onClick={()=> onClick(i + 1 )} className={(i + 1) == page ? "number_li active" : "number_li"}><a>{i + 1}</a></li>
+        })}
+        <li className="mobile_li">{page} / {total}</li>
+        <li className="next_li" onClick={()=> onClick("next")}><a><span>Next</span><i className="fa fa-angle-right"></i></a></li>
     </ul>
 }
 
