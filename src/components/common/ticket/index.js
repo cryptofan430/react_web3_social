@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types';
 import './style.scss';
 
@@ -10,8 +10,12 @@ function Ticket(props) {
         address,
         count} = props;
     return <div className={number > 5 ? "ticket_item dark" : "ticket_item light" }>
-            <span className="tick_number">{number}</span><i className={up_down == "up" ? "fa fa-arrow-up" : "fa fa-arrow-down"}></i>
-            <span className="tick_address">{address}</span><span className="tick_count">{count}</span>
+            <div className="pull-left">
+                <span className={"tick_number tick_number" + number}>{number}</span>
+                <i className={up_down == "up" ? "fa fa-arrow-up" : "fa fa-arrow-down"}></i>
+            </div>
+            <span className="tick_address">{address}</span>
+            <span className="tick_count">{count}</span>
         </div>
 }
 

@@ -36,7 +36,7 @@ Button.defaultProps = {
     width: "259px",
     height: "72px",
     children: "Connect",
-    button_type: "tk_outlined",
+    button_type: "tk_outlind",
     fontSize: "17px"
 }
 

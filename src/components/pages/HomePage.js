@@ -2,6 +2,8 @@ import React from 'react';
 import Button from '../../components/common/button';
 import Ticket from '../../components/common/ticket'; 
 import Nft from '../../components/common/nft';
+import Accordion from '../../components/common/accordion';
+import data from '../../data/ticket.json';
 
 import "../../styles/components/homepage.scss";
 
@@ -13,6 +15,25 @@ import Unnamed_10 from '../../images/unnamed-10.png';
 import Unnamed_12 from '../../images/unnamed-12.png';
 import Binance_logo from '../../images/binance-coin-bnb-logo 1.png';
 
+const acc_data = [
+    {
+        title: "how often do we do give aways",
+        description: "We aim to do one at least every week - we're a new company that recently launched so we'll release more details on the give aways as soon as possible collecting feedback from the community"
+    },
+    {
+        title: "how doese ticket work?",
+        description: "We aim to do one at least every week - we're a new company that recently launched so we'll release more details on the give aways as soon as possible collecting feedback from the community"
+    },
+    {
+        title: "how soon do you receive the nft",
+        description: "We aim to do one at least every week - we're a new company that recently launched so we'll release more details on the give aways as soon as possible collecting feedback from the community"
+    },
+    {
+        title: "if you don't win , do the tickets still have a value",
+        description: "We aim to do one at least every week - we're a new company that recently launched so we'll release more details on the give aways as soon as possible collecting feedback from the community"
+    },
+];
+
 const HomePage = () => (
     <div className="main">
         <div className="group-1">
@@ -22,6 +43,8 @@ const HomePage = () => (
             <div className="title">
                 <p className="title-label">Did you <span>cop</span></p>
                 <p className="title-label">a <span>tikket</span> yet?</p>
+            </div>
+            <div className="mobile-title">Did you <span>cop</span> a <span>tikket</span> yet?
             </div>
             <div className="description">
                 <p className="description-label">Imagine having the chance to own an iconinc NFT? <span className="description-tikkets">Tikkets</span> allows everyone to win an rare non-fungible token for a fraction of the price.</p>
@@ -59,7 +82,7 @@ const HomePage = () => (
                 <img src={Unnamed_12} alt="unnamed_12" />
                 <div className="tikket-sold">
                     <p>Tikkets sold</p>
-                    <p><span>2000</span>/10000</p>
+                    <p><span>2000</span>10000</p>
                 </div>
             </div>
         </div>
@@ -80,12 +103,9 @@ const HomePage = () => (
                     <p className="tikkets">tikkets</p>
                 </div>
                 <div className="wallet-details-content">
-                    <Ticket number="4" address="0x10102020sd0f0w01" up_down='down' count="287"></Ticket>
-                    <Ticket number="5" address="0x10102020sd0f0w01" count="287"></Ticket>
-                    <Ticket number="6" address="0x10102020sd0f0w01" up_down='down' count="287"></Ticket>
-                    <Ticket number="7" address="0x10102020sd0f0w01" count="287"></Ticket>
-                    <Ticket number="8" address="0x10102020sd0f0w01" up_down='down' count="287"></Ticket>
-                    <Ticket number="9" address="0x10102020sd0f0w01" count="287"></Ticket>
+                    {data.map((data) => {
+                        return <Ticket key={data.number} number={data.number} address={data.address} up_down={data.up_down} count={data.count}></Ticket>
+                    })}
                 </div>
             </div>
         </div>
@@ -94,11 +114,7 @@ const HomePage = () => (
                 <p>faq</p>
             </div>
             <div className="faq-details">
-                <p>sdfaaaaaaaaaaaa</p>
-                <p>sdfaaaaaaaaaaaa</p>
-                <p>sdfaaaaaaaaaaaa</p>
-                <p>sdfaaaaaaaaaaaa</p>
-                <p>sdfaaaaaaaaaaaa</p>
+                <Accordion data={acc_data}></Accordion>
             </div>
         </div>
         <div className="group-5">
