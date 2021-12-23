@@ -62,10 +62,15 @@
     margin-top: 32px;
 }
 .cop-ticket .ticket-board .cop-ticket-group .cop-ticket-button-group{
-    // width: 317px;
-    // height: 60px;
+    
     display: flex;
     align-items: flex-end;
+    button{
+        width: 317px;
+        height: 60px;
+        font-size: 18px;
+    }
+ 
     
 }
 .cop-ticket .ticket-board .cop-ticket-group .price{

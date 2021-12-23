@@ -44,7 +44,7 @@ NumberInput.propTypes = {
 
 NumberInput.defaultProps = {
     width: "109px",
-    height: "72px",
+    height: "60px",
     fontSize: "17px"
 }
 

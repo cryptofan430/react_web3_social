@@ -48,9 +48,11 @@ header .header-nav div{
 
 header .hover-button{
     
-    width: 259px;
-    height: 72px;
-    border: 1px solid #FFFFFF;
+    button{
+        width: 259px;
+        height: 72px;
+        font-size: 17px;
+    }
     a{
         font-family: Poppins;
         
