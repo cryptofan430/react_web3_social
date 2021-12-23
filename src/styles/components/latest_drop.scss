@@ -4,7 +4,7 @@
     margin-left: 388px;
     margin-right: 368px;
     width: 1166px;
-    
+    margin: 0 auto;
     position: relative;
     display: flex;
 }
@@ -69,9 +69,8 @@
 }
 .cop-ticket .ticket-board .cop-ticket-group .price{
     border-right: solid #9B9BA3;
-    margin: auto;
-    padding-right: 64px;
-
+    width: 256px;
+    padding-left: 80px;
     .name{
         margin-top: -12px;
         font-family: Poppins;
@@ -115,6 +114,7 @@
     
 }
 .cop-ticket .ticket-board .cop-ticket-group .odds{
+    padding-left: 40px;
     .name{
         margin-top: -12px;
         font-family: Poppins;
@@ -177,7 +177,8 @@
 }
 
 .wallet-rank .wallet{
-    margin-left: 325px;
+    margin: 0 auto;
+    // margin-left: 325px;
     margin-top: 378px;
     width: 1289px;
     height: 1109px;
@@ -242,13 +243,11 @@
     color: #FFFFFF;
 }
 .horizon.copped{
+    transition: all 0.5s ease-out;
     margin-top: 575px;
     margin-left: 482px;
     width: 956px;
     height: 183px;
-    
-    
-
 }
 
 .horizon.chance{
@@ -264,9 +263,11 @@
     margin-left: 482px;
     width: 956px;
     height: 150px;
+    .share-button{
+        margin-top: 39px;
+    }
 
 }
-
 
 //page
 
@@ -278,7 +279,37 @@
 
 }
 
-.after{
-    
 
+@media only screen and (max-width: 1919px) {
+    .main-board{
+        // width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+    
+}
+
+@media only screen and (max-width: 1067px) {
+    
+}
+
+@media only screen and (max-width: 899px) {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    
+}
+
+@media only screen and (max-width: 639px) {
+    
+}
+
+@media only screen and (max-width: 479px) {
+   
 }
