@@ -1,3 +1,29 @@
+.tikkets-image {
+    text-align: center;
+    position: relative;
+}
+
+.tikkets-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 204.29px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
+}
+
+.tikkets-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    left: 0px;
+    top: 275px;
+    background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
+    transform: rotate(-180deg);
+}
+
 .title > p > span {
     color: #040519;
     -webkit-text-stroke: 0.3px #FFFFFF;
@@ -54,38 +80,18 @@ img {
     .description {
         width: 722px;
         height: 50px;
-        margin: 0 auto;
-        margin-top: -20px;
+        margin: 0 auto;       
     }
 
     .btns {
+        display: flex;
+        justify-content: center;
         margin-top: 37px;
 
         .tk_full {
             margin-left: 33px;
         }
     }
-}
-
-.group-1-image::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 204.29px;
-    left: 0px;
-    top: 0px;
-    background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
-}
-
-.group-1-image::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 240px;
-    left: 0px;
-    top: 280.5px;
-    background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
-    transform: rotate(-180deg);
 }
 
 .group-2 {    
@@ -101,6 +107,10 @@ img {
     .title {       
         height: 183px;
     }  
+
+    .mobile-title {
+        display: none;
+    }
 
     .price-tikket-button {
         display: flex;
@@ -146,7 +156,6 @@ img {
     .price-tikket-button .tikket-button {
         width: 239px;
         height: 63px; 
-        border: 1px solid #FFFFFF;
         box-sizing: border-box;
         margin-left: 71px;
     }
@@ -154,33 +163,37 @@ img {
 
 .group-2-image {
     margin-left: 108px;
+
+    .tikket-sold {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 19px;  
+    }
+
+    .tikket-sold p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    .tikket-sold p > span {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .tikket-sold p > span::after {
+        content: "/";
+        padding: 5px;
+        color: #FFFFFF;
+    }
 }
 
-.group-2-image .tikket-sold {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 19px;    
-}
-
-.group-2-image .tikket-sold p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 140%;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-}
-
-.group-2-image .tikket-sold p > span {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.group-2-image .tikket-sold p > span::after {
-    content: "/";
-    padding: 5px;
-    color: #FFFFFF;
+.mobile-group-2-image {
+    display: none;
 }
 
 .group-3 {    
@@ -197,6 +210,10 @@ img {
 
     .title {
         height: 183px;
+    }
+
+    .mobile-title {
+        display: none;
     }
 
     .description {
@@ -220,50 +237,54 @@ img {
         margin-top: 40px;
         margin-left: 95px;
         position: relative;
+
+        .ranking {
+            width: 213px;
+            height: 51px;
+            font-family: Horizon;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 140%;
+            color: #FFFFFF;
+            margin-bottom: 0px;
+        }
+    
+        .address {
+            width: 368px;
+            height: 51px;       
+            font-family: Horizon;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 140%;
+            color: #FFFFFF;
+            margin-bottom: 0px;
+        }
+    
+        .tikkets {       
+            width: 368px;
+            height: 51px;       
+            font-family: Horizon;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 140%; 
+            text-align: right;
+            color: #FFFFFF;
+            margin-bottom: 0px;        
+            position: absolute;
+            right: 100px;
+        }
+    }
+
+    .mobile-wallet-details-title {
+        display: none;
     }
 
     .wallet-details-content {
         padding: 57px 68px 76px 68px;
-    }    
-
-    .ranking {
-        width: 213px;
-        height: 51px;
-        font-family: Horizon;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 140%;
-        color: #FFFFFF;
-        margin-bottom: 0px;
-    }
-
-    .address {
-        width: 368px;
-        height: 51px;       
-        font-family: Horizon;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 140%;
-        color: #FFFFFF;
-        margin-bottom: 0px;
-    }
-
-    .tikkets {       
-        width: 368px;
-        height: 51px;       
-        font-family: Horizon;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 140%; 
-        text-align: right;
-        color: #FFFFFF;
-        margin-bottom: 0px;        
-        position: absolute;
-        right: 100px;
-    }
+    }     
 }
 
 .group-3-wallets::before {
@@ -271,7 +292,7 @@ img {
     left: -25px;
     content: "";
     width: 1370px;
-    height: 778px;
+    height: 750px;
     background: linear-gradient(180deg, #040519 23.6%, rgba(4, 5, 25, 0) 100%);
     transform: rotate(-180deg);    
 }
@@ -351,6 +372,18 @@ img {
 
     .group-1, .group-2, .group-3, .group-4, .group-5, .group-6 {
         width: 100%;
+    }   
+
+    .group-1 .title {
+        height: auto;
+    }
+
+    .group-1 .description {
+        width: 100%;
+    }
+
+    .group-1 .btns button {
+        width: 100%;
     }
 
     .group-2-component .title {
@@ -367,62 +400,572 @@ img {
 
     .group-6-component .title {
         height: auto;
+        width: 100%;
+    }
+
+    .group-6-component .description {
+        height: auto;
+        width: 100%;
     }
 
     .group-2-component, .group-3-component, .group-5-component, .group-6-component {
         width: 100%;
     }
+
+    .group-3-wallets {
+        width: 100%;
+    }
+
+    .group-3-wallets::before {        
+        width: 105%;       
+    }
 }
 
 @media only screen and (max-width: 1399px) {
+    .faq-title {        
+        margin-right: 130px;
+    }    
 
+    .group-1 .description {
+        position: relative;
+    }
+
+    .group-2-image {
+        margin-left: 90px;
+
+        img {
+            width: 300px;
+        }
+    }   
+
+    .group-3-wallets .wallet-details-title {
+        margin-left: 85px;
+    }
+
+    .group-3-wallets .wallet-details-title .ranking {
+        font-size: 20px;
+        width: 230px;
+    }
+
+    .group-3-wallets .wallet-details-title .address {
+        font-size: 20px;
+        width: 175px;
+    }
+
+    .group-3-wallets .wallet-details-title .tikkets {
+        width: 150px;
+        font-size: 20px;
+        position: absolute;
+        right: 95px;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
-    
+   .main {
+       padding: 150px;
+   }  
+
+   .group-3-wallets .wallet-details-title {
+        margin-left: 85px;
+    }
+
+    .group-3-wallets .wallet-details-title .ranking {
+        font-size: 20px;
+        width: 230px;
+    }
+
+    .group-3-wallets .wallet-details-title .address {
+        font-size: 20px;
+        width: 175px;
+    }
+
+    .group-3-wallets .wallet-details-title .tikkets {
+        width: 150px;
+        font-size: 20px;
+        position: absolute;
+        right: 95px;
+    }
 }
 
 @media only screen and (max-width: 1067px) {
-    
+    .main {
+        padding: 100px;
+    }
+
+    .tikkets-image img {
+        width: 680px;
+    }
+
+    .title-label {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .faq-title {
+        font-size: 65px;
+    }   
+
+    .group-2-component .price-tikket-button .tikket-button {
+        width: 100%;
+        margin-left: 40px;       
+    }
+
+    .group-2-image {
+        margin-left: 60px;
+
+        img {
+            width: 280px;
+        }
+    }
+
+    .group-3-wallets .wallet-details-title {
+        margin-left: 60px;
+    }
+
+    .group-3-wallets .wallet-details-title .ranking {
+        font-size: 20px;
+        width: 205px;
+    }
+
+    .group-3-wallets .wallet-details-title .address {
+        font-size: 20px;
+        width: 175px;
+    }
+
+    .group-3-wallets .wallet-details-title .tikkets {
+        width: 150px;
+        font-size: 20px;
+        position: absolute;
+        right: 80px;
+    }
+
+    .group-3-wallets .wallet-details-content {
+        padding: 57px 50px 76px 50px;
+    }
+
+    .ticket_item span.tick_address {
+        margin-left: 115px;
+    }
+
+    .tikkets-image::after {      
+        position: absolute; 
+        left: 0px;
+        top: 310px;       
+    }
 }
 
 @media only screen and (max-width: 899px) {
-    
+    .main {
+        padding: 50px;
+    }
+
+    .tikkets-image img {
+        width: 650px;
+    }
+
+    .group-1 .description {
+        height: auto;
+        z-index: 1;
+    }
+
+    .group-2-image {
+        margin-left: 40px;
+    }
+
+    .group-2-image img {
+        width: 230px;
+    }
+
+    .group-3-wallets .wallet-details-content {
+        padding: 40px 20px;
+    } 
+
+    .group-3-wallets .wallet-details-title .ranking {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .group-3-wallets .wallet-details-title .address {
+        width: 200px;
+    }
+
+    .group-3-wallets .wallet-details-title .tikkets {
+        width: 200px;
+        position: absolute;
+        right: 50px;
+    }
+
+    .group-3-wallets .wallet-details-title {
+        margin-left: 40px;
+    }
+
+    .tikkets-image::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        left: 0px;
+        top: 280px;
+        background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
+        transform: rotate(-180deg);
+        z-index: 1;
+    }
 }
 
 @media only screen and (max-width: 767px) {
+    .main {
+        padding: 0px;
+    }
     
-}
+    .description-label {
+        font-size: 19px;
+    } 
 
-@media only screen and (max-width: 639px) {
-    
-}
+    .tikkets-image img {
+        width: 600px;
+    }
 
-@media only screen and (max-width: 479px) {
-    .group-1 {
+    .tikkets-image img {       
+        transform: scale(1.1);
+    }
+
+    .tikkets-image::before {
+        content: "";
+        position: absolute;
         width: 100%;
+        height: 204.29px;
+        left: 0px;
+        top: -50px;
+        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
+        z-index: 1;
+    }
 
+    .tikkets-image::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        left: 0px;
+        top: 253px;
+        background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
+        transform: rotate(-180deg);
+        z-index: 1;
+    }
+
+    .group-1 {
         .title {
             display: none;
         }
 
         .mobile-title {
-            display: block;          
-            width: 322px;
-            height: 232px; 
+            display: block;           
+            width: 100%;
+            height: auto;  
             font-family: Horizon;
             font-style: normal;
             font-weight: bold;
             font-size: 50px;
-            line-height: 58px;          
-            align-items: center;
+            line-height: 58px;  
             color: #FFFFFF;
             margin: 0 auto;
+            position: relative;
+            bottom: 65px;
+            z-index: 2;
+            text-align: initial;
+            padding: 0 25px;
 
             span {
                 color: #040519;
                 -webkit-text-stroke: 0.3px #FFFFFF;
             }
         }
+
+        .description {
+            margin-top: -35px;
+            padding: 0 27px 0 26px;
+            text-align: initial;
+        }
+
+        .btns {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0 20px 0 16px;
+
+            .tk_full {
+                margin-left: 0px;
+                margin-top: 16px;
+            }
+        }
+    }   
+
+    .group-2 {
+        margin-top: 136px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 21px 0 26px;
     }
+
+    .group-2-component {
+        padding-top: 0px;
+
+        .title {       
+            display: none;
+        }  
+    
+        .mobile-title {
+            display: block;   
+            width: 100%;
+            height: auto;         
+            font-family: Horizon;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 39px;
+            line-height: 45px;
+            color: #FFFFFF;
+        }
+
+        .mobile-title > span {
+            color: #040519;
+            -webkit-text-stroke: 0.3px #FFFFFF;
+        }
+
+        .description {
+            margin-top: 45px;
+        }
+
+        .price-tikket-button {
+            display: flex;
+            flex-direction: column;
+
+            .price {
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .tikket-button {
+                margin-left: 0px;
+                margin-top: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    .mobile-group-2-image {
+        display: block;
+        margin-left: 0px;
+        margin-top: 45px;
+
+        img {
+            width: 100%;
+        }
+    
+        .tikket-sold {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 19px;  
+        }
+    
+        .tikket-sold p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 140%;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin-bottom: 0px;
+        }
+    
+        .tikket-sold p > span {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    
+        .tikket-sold p > span::after {
+            content: "/";
+            padding: 5px;
+            color: #FFFFFF;
+        }
+    }
+    
+    .group-2-image {
+        display: none;
+    }    
+
+    .group-3 {
+        margin-top: 172px;
+        padding: 0 25px;
+    }
+
+    .group-3-component {
+        text-align: initial;
+
+        .title {
+            display: none;
+        }
+    
+        .mobile-title {
+            display: block;           
+            width: 100%;
+            height: auto; 
+            font-family: Horizon;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 39px;
+            line-height: 45px;
+            color: #FFFFFF;
+        }
+
+        .mobile-title > span {
+            color: #040519;
+            -webkit-text-stroke: 0.3px #FFFFFF;
+        }
+
+        .description {
+            margin-top: 30px;
+        }
+    }
+    
+    .group-3-wallets {  
+        margin-top: 42px;       
+    
+        .mobile-wallet-details-title {
+            display: flex;
+            margin-top: 40px;
+            margin-left: 15px;
+            position: relative;
+    
+            .ranking {
+                width: 195px;
+                height: 51px;
+                font-family: Horizon;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 140%;
+                color: #FFFFFF;
+                margin-bottom: 0px;
+            }
+        
+            .address {
+                width: 170px;
+                height: 51px;       
+                font-family: Horizon;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 140%;
+                color: #FFFFFF;
+                margin-bottom: 0px;
+            }
+        
+            .tikkets {       
+                width: 170px;
+                height: 51px;       
+                font-family: Horizon;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 140%; 
+                text-align: right;
+                color: #FFFFFF;
+                margin-bottom: 0px;        
+                position: absolute;
+                right: 45px;
+            }
+        }
+    
+        .wallet-details-title {
+            display: none;
+        }
+    
+        .wallet-details-content {
+            padding: 0px 7px 40px 11px;
+        }     
+    }
+
+    .group-4 {
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .tikkets-image img {
+        width: 420px;
+    }
+
+    .tikkets-image::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 204.29px;
+        left: 0px;
+        top: -80px;
+        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
+        z-index: 1;
+    }
+
+    .tikkets-image::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 240px;
+        left: 0px;
+        top: 184px;
+        background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
+        transform: rotate(-180deg);
+        z-index: 1;
+    }
+
+    .group-1 .mobile-title {       
+        position: relative;
+        bottom: 50px;    
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .tikkets-image img {
+        width: 350px;
+        transform: scale(1.1);
+    }
+
+    .tikkets-image::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 107.29px;
+        left: 0px;
+        top: -10px;
+        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
+        z-index: 1;
+    }
+
+    .tikkets-image::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 107px;
+        left: 0px;
+        top: 145px;
+        background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
+        transform: rotate(-180deg);
+        z-index: 1;
+    }     
+}
+
+@media only screen and (min-width: 375px) {
+    
 }
