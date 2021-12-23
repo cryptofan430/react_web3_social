@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import '../../styles/components/latest_drop.scss'
+// import '../../styles/components/latest_drop.scss'
 import { CopTicket } from '../CopTicket';
 import { WalletRank } from '../WalletRank';
 

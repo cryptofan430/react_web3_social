@@ -2,9 +2,7 @@
 
 import React, {useEffect, useState} from 'react';
 
-import '../../../styles/components/latest_drop.scss'
-
-
+// import '../../../styles/components/latest_drop.scss'
 
 import CopAvatar from '../../../images/cop_avatar.png';
 import BinanceIcon from '../../../images/binance-coin-bnb-logo 1.png';
@@ -27,7 +25,6 @@ const Copped = () => (
         <div>
             <span>TIKKETS</span>
         </div>
-        
         
     </div>
 );
@@ -135,12 +132,14 @@ function LatestDrop () {
                         <div className='ticket-board'>
                             <Endsin />    
                             <div className='win-bored' >
-                                <span >WIN </span><span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}> BORED APE </span><span>#4252</span>
+                                <p><span >WIN </span><span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}> BORED</span></p>
+                                <p><span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}>APE </span><span>#4252</span></p>
+                                
                             </div>
                             <div className='content'>
-                                <p>We want everyone to have equal opportunity, 
+                                We want everyone to have equal opportunity, 
                                 especially those who&apos;d normally wouldn&apos;t have a change or voice 
-                                in this space to own a iconic NFT</p>
+                                in this space to own a iconic NFT
                             </div>
                             <div className='cop-ticket-group'>
                                 <div className='cop-ticket-button-group'>
@@ -169,10 +168,7 @@ function LatestDrop () {
                                 <p><span className='sold-num'>2000</span>/10,000</p>
                             </div>
                         </div>
-                        <div className='avatar'>
-                            
-                        </div>
-
+                        
                     </div>
 
                     <div className='wallet-rank'>
