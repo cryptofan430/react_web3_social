@@ -50,8 +50,8 @@ const HomePage = () => (
                 <p className="description-label">Imagine having the chance to own an iconinc NFT? <span className="description-tikkets">Tikkets</span> allows everyone to win an rare non-fungible token for a fraction of the price.</p>
             </div>
             <div className="btns">
-                <Button button_type="tk_outlined" width="342.47px" height="72px" id="tk_outlined">But a Tikket</Button>
-                <Button button_type="tk_full" width="342.47px" height="72px" id="tk_full">Connect</Button>
+                <Button button_type="tk_outlined" >But a Tikket</Button>
+                <Button button_type="tk_full" >Connect</Button>
             </div>
         </div>
         <div className="group-2">
@@ -82,7 +82,7 @@ const HomePage = () => (
                         </p>
                     </div>
                     <div className="tikket-button">
-                        <Button button_type="tk_outlined" width="239px" height="63px">But a Tikket</Button>
+                        <Button button_type="tk_outlined" >But a Tikket</Button>
                     </div>
                 </div>
             </div>
@@ -135,6 +135,8 @@ const HomePage = () => (
                     <p className="title-label">who is</p>
                     <p className="title-label">behind <span>tikkets</span></p>
                 </div>
+                <div className="mobile-title">who is behind <span>tikkets</span>
+                </div>
                 <div className="description">
                     <p className="description-label">As you know, the team behind the project is everything. Each of us behind <span className="description-tikkets">Tikkets</span> bring something unique and different to the table allowing us to execute in the best way possible.</p>
                 </div>
@@ -152,12 +154,14 @@ const HomePage = () => (
                     <p className="title-label">what tf do i </p>
                     <p className="title-label">do with my <span>tikkets</span>?</p>
                 </div>
+                <div className="mobile-title">what tf do i do with my <span>tikkets</span>?
+                </div>
                 <div className="description">
                     <p className="description-label">The unsed Tikkets will have a use-case in the near future. We’re working on this as you’re reading this and can promise you. It’s big. We’ll be annoucing this thourgh our social channels so make sure to follow us on Twitter. </p>
                 </div>
             </div>
             <div className="group-6-btn">
-                <Button button_type="tk_full" width="297.3px" height="72px">Follow us on Twitter</Button>
+                <Button button_type="tk_full" >Follow us on Twitter</Button>
             </div>
         </div>
     </div>

@@ -33,3 +33,17 @@
     line-height: 140%;
     color: #FFFFFF;
 }
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        margin-top: 295px;
+    }
+
+    .footer-logo {
+        margin-left: 33px;
+    }
+
+    .footer-all-rights-reserved {
+        display: none;
+    }
+}
