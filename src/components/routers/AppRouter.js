@@ -10,8 +10,8 @@ import { Footer } from '../Footer/Footer';
 import { HomePage } from '../pages/HomePage';
 import { LatestDrop } from '../pages/LatestDrop';
 import { ZipCodesPage } from '../pages/ZipCodesPage';
-
-
+import { Previous } from '../pages/Previous';
+import { After } from '../pages/giveaway';
 // COMPONENT
 
 export const AppRouter = () => (
@@ -22,6 +22,8 @@ export const AppRouter = () => (
                 <Route path='/' component={HomePage} exact={true} />
                 <Route path='/zipcodes' component={ZipCodesPage} />
                 <Route path='/drop' component={LatestDrop} />
+                <Route path='/pre' component={Previous} />
+                <Route path='/after' component={After} />
                 <Redirect to="/" />
             </Switch>
             <Footer />

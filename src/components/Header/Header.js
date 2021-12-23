@@ -7,15 +7,9 @@ import Button from '../common/button';
 export const Header = () => (
    <header>
        <div className='header-nav'>
-           <div className='logo'>
-            <p>TIKKETS</p>
-            </div>
-            <div className='latest'>
-            <p>Latest drop</p>
-            </div>
-            <div className='previous'>
-            <p>Previous drop</p>
-            </div> 
+           <div className='logo'>TIKKETS</div>
+            <div className='latest'>Latest drop</div>
+            <div className='previous'>Previous drop</div> 
         </div>
 
        <div className='hover-button'>

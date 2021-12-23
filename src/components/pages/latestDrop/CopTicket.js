@@ -56,14 +56,16 @@ function Endsin() {
         </div>
 }
 
+
+
  function CopTicket() {
-   const [tickets, setTickets] = useState(10);
+   const [tickets, setTickets] = useState(1);
 
    function handleIncrease () {
     setTickets(num => num + 1);
    }
    function handleDecrease () {
-       if(tickets > 0)
+       if(tickets > 1)
         setTickets(num => num - 1);
        else{
         setTickets(num => num );
@@ -87,26 +89,32 @@ function Endsin() {
                 </div>
                 <div className='price'>
                     <div className='name'>Price</div>
-                    <div className='value'> 0.0062
-                        <span className='img'><img src={BinanceIcon}></img></span>
+                    <div className='value'> 
+                        <div>{0.0062 * tickets}</div>
+                        <div className='img'><img src={BinanceIcon}></img></div>
                     </div>
                 </div>
                 <div className='odds'>
                     <div className='name'>Odds</div>
-                    <div className='value'> 0.01%</div>
+                    <div className='value'>{0.01 * tickets}%</div>
                 </div>
             </div>
         </div>
         <div className='ticket-image'>
-            <img src={ CopAvatar} alt ="avatar"></img>
+            <span>
+                <img src={ CopAvatar} alt ="avatar"></img>
+            </span>
             <div className="sold">
                 <p>Tikkets sold:</p>
-                <p><span className='sold-num'>2,000</span>/10,000</p>
+                <p><span className='sold-num'>2000</span>/10,000</p>
             </div>
         </div>
         <div className='avatar'>
             
         </div>
+
+
+        
     </div>
 }
 

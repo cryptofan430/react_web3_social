@@ -13,6 +13,9 @@ header .header-nav{
     height: 41px;
     
     margin-right: 488px;
+
+    justify-content: space-between;
+    align-items: center;
     
 }
 header .header-nav .logo{
@@ -32,19 +35,15 @@ header .header-nav .logo{
 }
 
 header .header-nav div{
-    margin-right: 100px;
-    width: 112px;
+    
     height: 38px;
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 140%;
-    /* or 25px */
     
-    align-items: center;
-    
-    color: #FFFFFF
+    color: #FFFFFF;
 }
 
 header .hover-button{
