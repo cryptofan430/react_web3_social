@@ -12,7 +12,7 @@ import NumberInput from '../../common/numberInput';
 
 import Ticket from '../../common/ticket';
 import Pagination from '../../common/pagination/index';
-import { ticketData } from './data';
+import ticketData from './data.json';
 
 // COMPONENT
 
@@ -96,8 +96,8 @@ function Endsin() {
 
 
 function LatestDrop () {
-    const [tickets, setTickets] = useState(2);
-    const [page, setPage] = useState(2);
+    const [tickets, setTickets] = useState(0);
+    const [page, setPage] = useState(0);
 
    function handleIncrease () {
     setTickets(num => num + 1);
@@ -113,14 +113,28 @@ function LatestDrop () {
        
     }, [tickets, page]);
 
-   function handleCop() {
-    
-    setPage(1);
-    setTimeout(() => setPage(2), 1000);
-    setTimeout(() => setPage(3), 3000);
-   }
+    function handleCop() {
+        setPage(1);
+        setTimeout(() => setPage(2), 1000);
+        setTimeout(() => setPage(3), 3000);
+    }
 
- return <div className="latest-drop">
+    const [curPage, setCurPage ]    = useState(1);
+    const [total ]      = useState(2 );
+
+    function handleClick(page ){ 
+        if(page == "prev" && curPage != 1 ){
+            setCurPage(curPage - 1 );
+        }else if(page == "next" && curPage != total ){
+            setCurPage(curPage + 1);
+        }else if(page != "next" && page != "prev" ){
+            setCurPage(page );
+        }
+        
+    }
+
+
+    return <div className="latest-drop">
             {page == 0 ?
                 <div className='main-board'>
                     <div className='cop-ticket'>
@@ -131,12 +145,10 @@ function LatestDrop () {
                                 <span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}>APE </span><span>#4252</span>
                             </div>
                             <div className='mobile-img'>
-                            
                                 <img src={ CopAvatar} alt ="avatar"></img>
-                                
                                 <div className="sold">
                                     <p>Tikkets sold:</p>
-                                    <p><span className='sold-num'>2000 </span>/10,000</p>
+                                    <p><span className='sold-num'>2000 </span> / 10,000</p>
                                 </div>
                             </div>
 
@@ -172,10 +184,9 @@ function LatestDrop () {
                             </span>
                             <div className="sold">
                                 <p>Tikkets sold:</p>
-                                <p><span className='sold-num'>2000</span>/10,000</p>
+                                <p><span className='sold-num'>2000</span> / 10,000</p>
                             </div>
                         </div>
-                        
                     </div>
 
                     <div className='wallet-rank'>
@@ -191,26 +202,18 @@ function LatestDrop () {
                                 <p className='tikkets'>TIKKETS</p>
                             </div>
                             <div className='tickets'>
-                                {ticketData.map( (item, key )=> {
-                                    <Ticket key={key} number={item.number} address={item.address} up_down={item.up_down} count={item.count}></Ticket>    
-                                })
-
-                                }
-                                <Ticket number="1" address="danieldalen.eth" up_down='up' count="248"></Ticket>
-                                <Ticket number="2" address="iwillwinthisapeforsure.eth" up_down='up' count="213"></Ticket>
-                                <Ticket number="3" address="0x8E45cbB9bAf6fREG4d0D0d3A81DF478b22091e1f" up_down='down' count="150"></Ticket>
-                                <Ticket number="4" address="punk3251.eth" up_down='down' count="134"></Ticket>
-                                <Ticket number="5" address="0x8C98cbC9bAf6cGRA1x0D0d3A81DF478b22091ce3d" count="95"></Ticket>
-                                <Ticket number="6" address="0x3V328bC9bAf6cGRA1x0D0d3A81DF478b22091ce2v" up_down='down' count="46"></Ticket>
-                                <Ticket number="7" address="0x7be8076f4ea4a4ad08075c2508e481d6c946d12b" count="23"></Ticket>
-                                <Ticket number="8" address="billsfan86.eth" up_down='down' count="14"></Ticket>
-                                <Ticket number="9" address="0x348fc118bcc65a92dc033a951af153d14d945312" count="12"></Ticket>
-                                <Ticket number="10" address="adam.eth" count="9"></Ticket>
+                                {ticketData.map((data, key ) => {
+                                    if (key >= (curPage - 1) * 10 && key < curPage * 10){
+                                        return <Ticket key={data.number} number={data.number} address={data.address} up_down={data.up_down} count={data.count}></Ticket>
+                                    }else{
+                                        return  "";
+                                    }
+                                })}
                             </div>
                             
                         </div>
                         <div className='page'>
-                            <Pagination total={3} page={2}></Pagination>
+                            <Pagination total={total} page={curPage} onClick={handleClick }></Pagination>
                         </div>
                     </div>
                 </div>          

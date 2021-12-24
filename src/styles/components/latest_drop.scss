@@ -1,8 +1,12 @@
+.latest-drop .cop-ticket {
+    position: relative;
+    display: flex;
+    width: 1165px;
+    margin: 0 auto;
+}
+
 .latest-drop{
     // width: 100%;
-    .main-board{
-        padding: 0 388px;
-    }
     .cop-ticket{
  
         position: relative;
@@ -17,8 +21,6 @@
                 font-size: 22px;
                 line-height: 140%;
                 /* identical to box height, or 31px */
-            
-            
                 color: rgba(255, 255, 255, 0.5);
             }
             .win-bored{
@@ -175,14 +177,15 @@
     }
     
     .wallet-rank{
-        width: 100%;
+        width: 1289px;
+        margin: 0 auto;
         .wallet{
             margin: 0 auto;
             // margin-left: 325px;
             display: relative;
-            margin-top: 378px;
+            margin-top: 374px;
             width: 1289px;
-            height: 1109px;
+            padding-bottom: 38px;
         
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -191,7 +194,7 @@
             border-radius: 14px;
             .field{
                 margin-top:40px;
-                margin-left: 75px;
+                margin-left: 67px;
                 // margin: 40px 105px 0 93px;
                 display: flex;
                 position: relative;
@@ -205,16 +208,13 @@
                     color: #FFFFFF;
                 }
                 .rank{
-                    width: 220px;
+                    width: 240px;
                 }
-                .wallet-address{
-                    // width: 772px;
-                }
+                
                 .tikkets{
-                    
+                    right: 104px;
                     width: 373px;
                     position: absolute;
-                    right: 80px;
                     text-align: right;
                 }
             }
@@ -229,11 +229,10 @@
         }
         .page{
             margin-top: 47px;
-            position: absolute;
-            right: 81px;
-            margin-right: 386px;
             text-align: right;
-            // justify-content: flex-end;
+            width: 100%;
+            right: 70px;
+            position: relative;
         }
     }
     //common
@@ -250,8 +249,12 @@
         color: #FFFFFF;
     }
 }
-
-
+.tk_pagination {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    float: right;
+}
 
 //pagtes 
     .copped{
@@ -582,14 +585,14 @@
         
                 .wallet{
                     .field{
-                        margin-left: 65px;
+                        margin-left: 67px;
+
+                        .rank{
+                            width: 247px;
+                        }
                     }
                     
                 }
-                .page{
-                    
-                }
-                
             }
         }
     }
@@ -694,13 +697,17 @@
         
                 .wallet{
                
-                    .field .rank{
-                        width: 190px;
+                    .field{ 
+                        .rank{
+                            width: 214px;
+                        }
+
+                        .tickets{ 
+                            right: 88px;
+                            padding: 0 50px;
+                        }
                     }
-                    .tickets{
-                        // margin-left: 65px;
-                        padding: 0 50px;
-                    }
+                    
                 }
             }
         }
@@ -811,12 +818,15 @@
             .wallet-rank{
         
                 .wallet{
-                    .field p{
-                        font-size: 15px;
+                    .field {
+                        p{
+                            font-size: 15px;
+                        }
                     }
-                    
+
                     .tickets{
-                        // margin-left: 65px;
+                        right: 91px;
+                        margin-top: 0 !important;
                         padding: 0 50px;
                     }
                 }
@@ -832,10 +842,15 @@
         line-height: 75px;
         
     }
-    
+    .latest-drop .wallet-rank .wallet .field .tikkets{
+        right: 91px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
+    .latest-drop .wallet-rank .wallet{
+        margin-top: 50px;
+    }
     .latest-drop{
         .main-board{
             padding: 0 20px ;
@@ -930,11 +945,11 @@
                     .mobile-field{
                         display: flex;
                         margin-top: 40px;
-                        margin-left: 56px;
+                        margin-left: 37px;
                         position: relative;
                 
                         .rank{
-                            width: 185px;
+                            width: 192px;
                             height: 51px;
                             font-family: Horizon;
                             font-style: normal;
@@ -969,19 +984,16 @@
                             color: #FFFFFF;
                             margin-bottom: 0px;        
                             position: absolute;
-                            right: 60px;
+                            right: 56px;
                         }
                     }
         
                     .tickets{
-                        // margin-left: 65px;
+                        margin-left: 20px;
                         padding: 0 15px;
+                        margin-top: 0;
                     }
                 }
-                .page{
-                    
-                }
-                
             }
         }
     }
@@ -1060,9 +1072,9 @@
         
                 .wallet{
                     .mobile-field{
-                        margin-left: 25px;
+                        margin-left: 38px;
                         .rank {       
-                            width: 185px;
+                            width: 130px;
                         }
                     
                         .wallet-address {   
@@ -1083,10 +1095,6 @@
                         padding: 0 15px;
                     }
                 }
-                .page{
-                    
-                }
-                
             }
             
         }
@@ -1113,34 +1121,31 @@
         }
     }
 
-  
- 
-  
-
 }
 
 @media only screen and (max-width: 479px) {
     .latest-drop{
-        .wallet-rank{
-
-            .wallet{
-                .mobile-field{
-                    .rank {       
-                        width: 80px;
-                    }
-                
-                    .wallet-address {   
-                        width: 85px;
-                    }
-                
-                    .tikkets {
-                        width: 100px;      
-                        position: absolute;
-                        right: 25px;
+        .main-board{
+            .wallet-rank{
+                .wallet{
+                    .mobile-field{
+                        .rank {       
+                            width: 69px;
+                        }
+                    
+                        .wallet-address {   
+                            width: 85px;
+                        }
+                    
+                        .tikkets {
+                            width: 100px;      
+                            position: absolute;
+                            right: 25px;
+                        }
                     }
                 }
+                
             }
-            
         }
     }
 
