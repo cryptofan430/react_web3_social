@@ -1,3 +1,6 @@
+.main-board{
+    margin-top: 243px;
+}
 .latest-drop .cop-ticket {
     position: relative;
     display: flex;
@@ -7,8 +10,9 @@
 
 .latest-drop{
     // width: 100%;
+    // padding: 0 243px;
     .cop-ticket{
- 
+        
         position: relative;
         display: flex;
         .ticket-board{
@@ -17,7 +21,7 @@
                 // height: 31px;
                 font-family: 'Poppins', sans-serif;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 200;
                 font-size: 22px;
                 line-height: 140%;
                 /* identical to box height, or 31px */
@@ -45,7 +49,7 @@
                 // height: 81px;
                 font-family: Poppins;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 200;
                 font-size: 19px;
                 line-height: 140%;
                 color: #FFFFFF;
@@ -179,6 +183,7 @@
     .wallet-rank{
         width: 1289px;
         margin: 0 auto;
+        padding-bottom: 100px;
         .wallet{
             margin: 0 auto;
             // margin-left: 325px;
@@ -349,8 +354,8 @@
 //page
 
 .previous{
-    margin: 100px auto !important;
-
+    margin: 183px auto !important;  //354px
+    padding: 0 213px;
     .previous-title{
         
         font-family: HorizonOutlined;
@@ -423,8 +428,8 @@
 
 
     .previous{
-        padding: 0 100px;
-        margin: 354px auto !important;
+        padding: 0 140px;
+        
     
         .previous-title{
             
@@ -533,7 +538,7 @@
 
     .previous{
         padding: 0 80px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -649,7 +654,7 @@
 
     .previous{
         padding: 0 60px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -768,7 +773,7 @@
 
     .previous{
         padding: 0 60px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -1061,7 +1066,7 @@
     
     .previous{
         padding: 0 20px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -1215,7 +1220,7 @@
 
     .previous{
         padding: 0 20px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
