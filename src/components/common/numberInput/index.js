@@ -23,11 +23,12 @@ function NumberInput(props) {
             <div className='number'>{value}</div>
             
             <div className='arrow-group'>
-                
-                <a onClick={onIncrease} className='arrow-up'><i className="arrow up"></i></a>
-                
-                <a onClick={onDecrease} className='arrow-down'><i className="arrow down"></i></a>
-                
+                <div className='div-up'>
+                      <a onClick={onIncrease} ><i className="arrow up"></i></a>
+                </div>
+                <div className='div-down'>
+                      <a onClick={onDecrease} ><i className="arrow down"></i></a>
+                </div>
                 
             </div>
         </div>

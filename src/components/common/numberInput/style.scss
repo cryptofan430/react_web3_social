@@ -23,16 +23,34 @@
     .arrow-group{
         display: flex;
         flex-direction: column;
-        margin-top: -19px;
+        margin-top: -8px;
         cursor: pointer;
+        .div-up{
+          height: 30px;
+          padding-top: 10px;
+          -webkit-transition: padding 0.3s ease-out;
+          transition: padding 0.3s ease-out;
+          &:hover{
+            padding-top: 3px;
+          }
+        }
+        .div-down{
+          height: 30px;
+          -webkit-transition: padding 0.3s ease-out;
+          transition: padding 0.3s ease-out;
+          &:hover{
+            padding-top: 7px;
+          }
 
+        }
         a{
             height: 9px;
-            // -webkit-transition: height 0.2s ease-out;
-            // transition: height 0.2s ease-out;
+            // -webkit-transition: padding 0.2s ease-out;
+            // transition: padding 0.2s ease-out;
 
             &:hover{
-              opacity:0.3;
+              // opacity:0.3;
+              // padding: 5px
             }
         }
      
@@ -43,8 +61,8 @@
         display: inline-block;
         padding: 2px;
         
-        -webkit-transition: opacity 0.2s ease-out;
-        transition: opacity 0.2s ease-out;
+        -webkit-transition: padding 0.2s ease-out;
+        transition: padding 0.2s ease-out;
         
       }
       

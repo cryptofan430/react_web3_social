@@ -7,16 +7,15 @@ import Button from '../common/button';
 // COMPONENT
 
 export const Previous = () => (
-    <div className="horizon previous">
+    <div className="previous">
         
-        <div>
-            <span >404</span><span style={{fontFamily: 'Horizon'}}> THIS IS OUR</span>
-        </div>
-        <div>
+        <div className='previous-title'>
+            <span >404</span><span style={{fontFamily: 'Horizon'}}> THIS IS OUR </span>
+        
             <span style={{fontFamily: 'Horizon'}}>FIRST DROP</span>
         </div>
-
-        <Button button_type="tk_outlined" width="420px" height="72px" fontSize = "22px" onClick = {() => {}}>Check it out</Button>
-        
+        <div className='check_btn'>
+            <Button button_type="tk_outlined" onClick = {() => {}}>Check it out</Button>
+        </div>
     </div>
 );

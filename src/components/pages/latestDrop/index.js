@@ -18,27 +18,23 @@ import { ticketData } from './data';
 
 const Copped = () => (
     
-    <div className="horizon copped">
-        <div>
-            <span >YOU </span><span style={{fontFamily: 'Horizon'}}> COPPED #252</span>
-        </div>
-        <div>
+    <div className="copped">
+        
+            <span >YOU </span><span style={{fontFamily: 'Horizon'}}> COPPED #252 </span>
+        
             <span>TIKKETS</span>
-        </div>
+        
         
     </div>
 );
 
 const Chance = () => (
     
-    <div className="horizon chance">
-         <div>
-            <span style={{fontFamily: 'Horizon'}}>WITH A</span><span > 1% </span><span style={{fontFamily: 'Horizon'}}>CHANCE</span>
-        </div>
-        <div>
-            <span style={{fontFamily: 'Horizon'}}>OF </span><span>WINNING</span>
-        </div>
+    <div className="chance">
+         
+            <span style={{fontFamily: 'Horizon'}}>WITH A</span><span > 1% </span><span style={{fontFamily: 'Horizon'}}>CHANCE </span>
         
+            <span style={{fontFamily: 'Horizon'}}>OF </span><span>WINNING</span>
         
         
     </div>
@@ -46,11 +42,10 @@ const Chance = () => (
 
 const Share = () => (
     
-    <div className="horizon share">
-         <div>
+    <div className="share">
+         <div className='share-title'>
             <span >SHARE </span><span style={{fontFamily: 'Horizon'}}> TO WIN </span>
-        </div>
-        <div>
+        
             <span style={{fontFamily: 'Horizon'}}>FREE </span><span >TICKETS</span>
         </div>
         <div className='share-button'>
@@ -141,7 +136,7 @@ function LatestDrop () {
                                 
                                 <div className="sold">
                                     <p>Tikkets sold:</p>
-                                    <p><span className='sold-num'>2000</span>/10,000</p>
+                                    <p><span className='sold-num'>2000 </span>/10,000</p>
                                 </div>
                             </div>
 
@@ -186,6 +181,11 @@ function LatestDrop () {
                     <div className='wallet-rank'>
                         <div className='wallet'>
                             <div className='field'>
+                                <p className='rank'>RANK</p>
+                                <p className='wallet-address'>WALLET</p>
+                                <p className='tikkets'>TIKKETS</p>
+                            </div>
+                            <div className='mobile-field'>
                                 <p className='rank'>RANK</p>
                                 <p className='wallet-address'>WALLET</p>
                                 <p className='tikkets'>TIKKETS</p>

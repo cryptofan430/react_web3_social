@@ -190,7 +190,9 @@
         }
     }
 }
-
+.wallet-rank{
+    width: 100%;
+}
 .wallet-rank .wallet{
     margin: 0 auto;
     // margin-left: 325px;
@@ -206,8 +208,13 @@
     border-radius: 14px;
 
 }
+.wallet-rank .wallet .mobile-field{
+    display: none;
+}
 .wallet-rank .wallet .field{
-    margin: 40px 105px 0 93px;
+    margin-top:40px;
+    margin-left: 75px;
+    // margin: 40px 105px 0 93px;
     display: flex;
     position: relative;
     p{
@@ -229,14 +236,16 @@
         
         width: 373px;
         position: absolute;
-        right: 0px;
+        right: 80px;
         text-align: right;
     }
-    
 }
+
 .wallet-rank .wallet .tickets{
 
-    margin: 50px 65px 0 66px;
+    margin-top: 50px;
+    // margin-left: 65px;
+    padding: 0 65px;
     
 }
 .wallet-rank .page{
@@ -248,7 +257,6 @@
     // justify-content: flex-end;
     
 }
-
 
 //other page
 .horizon{
@@ -264,7 +272,7 @@
     color: #FFFFFF;
 }
 .horizon.copped{
-    transition: all 0.5s ease-out;
+    // transition: all 0.5s ease-out;
     margin-top: 575px;
     margin-left: 482px;
     width: 956px;
@@ -279,24 +287,62 @@
 
 }
 
-.horizon.share{
-    margin-top: 540px;
-    margin-left: 482px;
-    width: 956px;
-    height: 150px;
+.share{
+    margin: 540px auto !important;
+
+    .share-title{
+        
+        font-family: HorizonOutlined;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 65px;
+        line-height: 75px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
     .share-button{
+        text-align: center;
         margin-top: 39px;
+        button{
+            width: 352px;
+            height: 63px;
+            font-size: 22px;
+            
+        }
     }
 
 }
 
 //page
 
-.horizon.previous{
-    margin-top: 354px;
-    margin-left: 213px;
-    width: 1494px;
-    height: 272px;
+.previous{
+    margin: 354px auto !important;
+
+    .previous-title{
+        
+        font-family: HorizonOutlined;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 120px;
+        line-height: 138px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    // margin-top: 354px;
+    // margin-left: 213px;
+    // width: 1494px;
+    // height: 272px;
+    .check_btn{
+        text-align: center;
+        margin-top: 50px;
+        button{
+            width: 420px;
+            height: 72px;
+            font-size: 22px;
+            
+        }
+    }
 
 }
 
@@ -323,13 +369,37 @@
         }
     }
     .wallet-rank{
-        
         width: 100%;
         .wallet{
             width: 100%;
         }
         
     }
+
+
+    .previous{
+        padding: 0 100px;
+        margin: 354px auto !important;
+    
+        .previous-title{
+            
+            font-size: 100px;
+            line-height: 120px;    
+        }
+        
+        .check_btn{
+            
+            margin-top: 50px;
+            button{
+                width: 360px;
+                height: 72px;
+                font-size: 22px;
+                
+            }
+        }
+    
+    }
+
 
 
 }
@@ -380,6 +450,28 @@
         }
         
     }
+    .previous{
+        padding: 0 80px;
+        margin: 354px auto !important;
+    
+        .previous-title{
+            
+            font-size: 85px;
+            line-height: 110px;    
+        }
+        
+        .check_btn{
+            
+            margin-top: 40px;
+            button{
+                width: 330px;
+                height: 72px;
+                font-size: 20px;
+                
+            }
+        }
+    
+    }
     
 }
 
@@ -425,13 +517,37 @@
         width: 100%;
 
         .wallet{
-            
+            .field{
+                margin-left: 65px;
+            }
             
         }
         .page{
             
         }
         
+    }
+
+    .previous{
+        padding: 0 60px;
+        margin: 354px auto !important;
+    
+        .previous-title{
+            
+            font-size: 75px;
+            line-height: 90px;    
+        }
+        
+        .check_btn{
+            
+            margin-top: 30px;
+            button{
+                width: 270px;
+                
+                font-size: 20px;
+                
+            }
+        }
     }
 }
 
@@ -483,8 +599,34 @@
             .field .rank{
                 width: 190px;
             }
-            
+            .tickets{
+                // margin-left: 65px;
+                padding: 0 50px;
+            }
         }
+    }
+
+    .previous{
+        padding: 0 60px;
+        margin: 354px auto !important;
+    
+        .previous-title{
+            
+            font-size: 65px;
+            line-height: 80px;    
+        }
+        
+        .check_btn{
+            
+            margin-top: 30px;
+            button{
+                width: 270px;
+                height: 60px;
+                font-size: 20px;
+                
+            }
+        }
+    
     }
     
 }
@@ -541,6 +683,10 @@
                 font-size: 15px;
             }
             
+            .tickets{
+                // margin-left: 65px;
+                padding: 0 50px;
+            }
         }
     }
     
@@ -635,19 +781,90 @@
     .wallet-rank{
 
         .wallet{
-            .field p{
-                font-size: 13px;
+            .field{
+                display: none;
             }
-            .field .rank{
-                width: 160px;
-            }
+            .mobile-field{
+                display: flex;
+                margin-top: 40px;
+                margin-left: 56px;
+                position: relative;
+        
+                .rank{
+                    width: 185px;
+                    height: 51px;
+                    font-family: Horizon;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 140%;
+                    color: #FFFFFF;
+                    margin-bottom: 0px;
+                }
             
+                .wallet-address{
+                    width: 170px;
+                    height: 51px;       
+                    font-family: Horizon;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 140%;
+                    color: #FFFFFF;
+                    margin-bottom: 0px;
+                }
+            
+                .tikkets {       
+                    width: 170px;
+                    height: 51px;       
+                    font-family: Horizon;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 140%; 
+                    text-align: right;
+                    color: #FFFFFF;
+                    margin-bottom: 0px;        
+                    position: absolute;
+                    right: 60px;
+                }
+            }
+
+            .tickets{
+                // margin-left: 65px;
+                padding: 0 15px;
+            }
         }
         .page{
             
         }
         
     }
+
+    .previous{
+        padding: 0 20px;
+        margin: 354px auto !important;
+    
+        .previous-title{
+            
+            font-size: 70px;
+            line-height: 80px;    
+        }
+        
+        .check_btn{
+            
+            margin-top: 30px;
+            button{
+                // width: 270px;
+                width: 100%;
+                height: 60px;
+                font-size: 20px;
+                
+            }
+        }
+    
+    }
+
 }
 
 @media only screen and (max-width: 639px) {
@@ -664,11 +881,90 @@
                 padding-right: 70px;
             }
         }
-     
     }
+    .wallet-rank{
+
+        .wallet{
+            .mobile-field{
+                margin-left: 25px;
+                .rank {       
+                    width: 185px;
+                }
+            
+                .wallet-address {   
+                    width: 100px;
+                }
+            
+                .tikkets {
+                    width: 100px;      
+                    position: absolute;
+                    right: 30px;
+                }
+            }
+            
+
+            
+            .tickets{
+                // margin-left: 65px;
+                padding: 0 15px;
+            }
+        }
+        .page{
+            
+        }
+        
+    }
+    
+
 }
 
 @media only screen and (max-width: 479px) {
+
+    .wallet-rank{
+
+        .wallet{
+            .mobile-field{
+                .rank {       
+                    width: 80px;
+                }
+            
+                .wallet-address {   
+                    width: 85px;
+                }
+            
+                .tikkets {
+                    width: 100px;      
+                    position: absolute;
+                    right: 25px;
+                }
+            }
+        }
+        
+    }
+
+    .previous{
+        padding: 0 20px;
+        margin: 354px auto !important;
+    
+        .previous-title{
+            
+            font-size: 50px;
+            line-height: 58px;    
+        }
+        
+        .check_btn{
+            
+            margin-top: 30px;
+            button{
+                // width: 270px;
+                width: 100%;
+                height: 60px;
+                font-size: 22px;
+                
+            }
+        }
+    
+    }
 
 
 }
