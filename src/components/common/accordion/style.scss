@@ -8,6 +8,7 @@
 .acc_item{
     background-color: #040519;
     padding-top: 30px;
+    list-style: none;
     &:first-child{
         padding-top: 0;
     }
@@ -62,6 +63,7 @@
         line-height: 26.6px;
         font-weight: 200;
         margin-bottom: 75px;
+        color: #ffffffba;
     }
 
     &.acc-close{

@@ -286,7 +286,7 @@ img {
             color: #FFFFFF;
             margin-bottom: 0px;        
             position: absolute;
-            right: 100px;
+            right: 105px;
         }
     }
 
@@ -307,6 +307,7 @@ img {
     height: 750px;
     background: linear-gradient(180deg, #040519 23.6%, rgba(4, 5, 25, 0) 100%);
     transform: rotate(-180deg);    
+    z-index: 10;
 }
 
 .group-4 {
@@ -727,6 +728,10 @@ img {
                 margin-left: 0px;
                 margin-top: 16px;
             }
+
+            a{
+                width: 100%;
+            }
         }
     }   
 
@@ -1092,7 +1097,7 @@ img {
     .group-3-wallets .mobile-wallet-details-title .tikkets {
         width: 100px;      
         position: absolute;
-        right: 40px;
+        right: 47px;
     }
 }
 
@@ -1136,7 +1141,7 @@ img {
     .group-3-wallets .mobile-wallet-details-title .tikkets {
         width: 100px;      
         position: absolute;
-        right: 25px;
+        right: 20px;
     }
 }
 

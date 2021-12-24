@@ -17,7 +17,6 @@
     }
 }
 
-
 .ticket_item {
     &:hover{
         background: #18192bde;
@@ -72,12 +71,12 @@
 @media screen and (max-width: 639px){
     
     .ticket_item span.tick_address {
-        margin-left: 50px;
+        margin-left: 18px !important;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         display: inline-block;
-        max-width: 150px;
+        max-width: calc(100% - 130px);
     }
 }
 
@@ -86,11 +85,15 @@
         padding: 0 15px;
         
         i{
-            margin-left: 15px;
+            margin-left: 16px;
+            font-size: 14px;
+            position: relative;
+            top: -2px;
         }
 
         span.tick_address {
-            margin-left: 25px;
+            margin-left: 18px !important;
+            max-width: calc(100% - 130px);
         }
     }
 }
