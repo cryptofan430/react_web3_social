@@ -96,8 +96,8 @@ function Endsin() {
 
 
 function LatestDrop () {
-    const [tickets, setTickets] = useState(1);
-    const [page, setPage] = useState(0);
+    const [tickets, setTickets] = useState(2);
+    const [page, setPage] = useState(1);
 
    function handleIncrease () {
     setTickets(num => num + 1);
