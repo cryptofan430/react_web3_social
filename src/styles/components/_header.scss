@@ -144,26 +144,57 @@
 
 @media only screen and (max-width: 991px) {
     .navbar {       
-        padding: 59px 100px;
+        padding: 59px 26px;
     }
 
     .navbar-nav {
+        padding-left: 50px;
+        align-items: flex-start;
+
         .previous-drop {
             margin-right: 0px;
+            font-size: 25px;
+            color: #d7d7d7;
         }
 
         .latest-drop {
             margin-right: 0px;
+            font-size: 25px;
+            color: #d7d7d7;
+        }
+    }  
+
+    .navbar-expand-lg {
+        .navbar-collapse {            
+            position: fixed;
+            width: 100%;
+            margin: 0px auto;
+            left: 0px;
+            top: 145px;
+            z-index: 1;
+            box-shadow: 0px 8px 10px #8080802e;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                padding: 10px 0;
+            }
         }
     }
 
-    .nav-item {
-        padding: 10px 0;
-    }
+    .nav-link {       
+        .tk_outlined {
+            display: none;
+        }
+    }      
 }
 
 @media only screen and (max-width: 767px) {
     .navbar {        
-        padding: 71px 26px;
-    }
+        padding: 59px 26px;
+
+        .navbar-toggler {
+            padding: 0px;
+        }
+    }   
 }
