@@ -1,0 +1,17 @@
+
+[
+    {
+        "title": "BAYC giveaway #001",
+        "tikkets_value": "242", 
+        "odds_value": "8", 
+        "total_price_value": "7260", 
+        "image": "/images/giveaway_image1.png"
+    },
+    {
+        "title": "BAYC giveaway #002",
+        "tikkets_value": "542", 
+        "odds_value": "25", 
+        "total_price_value": "25252", 
+        "image": "/images/giveaway_image1.png"
+    }
+]

@@ -1,37 +1,37 @@
 // IMPORT PACKAGE REFERENCES
 import React from 'react';
-import '../../../styles/components/giveaway.scss'
-// IMPORT PROJECT REFERENCES
+import '../../../styles/components/giveaway.scss';
+import GiveawayCard from '../../common/giveawayCard';
+import data from '../../../data/giveaway.json';
 
-// COMPONENT
 
 export const After = () => (
-    <div className="after"> 
+    <div className="after">
         <div className='notify'>
-            <div className='horizon giveaway'>
-                <div>
-                    <span style={{fontFamily: 'Horizon'}}> YOU JOINED</span>
-                </div>
-                <div>
-                    <span>0 </span><span style={{fontFamily: 'Horizon'}}>GIVEAWAYS</span>
-                </div>
+            <div className='joined-giveaway'>
+                <p>YOU JOINED</p>
+                <p><span>0</span>GIVEAWAYS</p>
             </div>
+            <div className="mobile-joined-giveaway">you joined<span> 0 </span>giveaways</div>
             <div className='earned'>
-                <div className='text'>
-                    With a total earned value in USD
-                </div>
-                <div className='horizon amount'>
-                    $ 0
-                </div>
+                <p className='text'>With a total earned value in USD</p>                
+                <p className='amount'><span>$</span>0</p>
             </div>
         </div>
         <div className='giveaway-list'>
             <div className='active'>
-                <div className='title'>
-                    Active giveaways
-                </div>
+                <p className='title'>Active giveaways</p>
                 <div className='list'>
-
+                    {data.map((data) => {
+                        return <GiveawayCard 
+                                key={data.title} 
+                                title={data.title} 
+                                tikkets_value={data.tikkets_value} 
+                                odds_value={data.odds_value} 
+                                total_price_value={data.total_price_value} 
+                                image={data.image}
+                            />
+                    })}                   
                 </div>
             </div>
             <div className='previous'>
@@ -43,6 +43,5 @@ export const After = () => (
                 </div>
             </div>
         </div>
-       
     </div>
 );

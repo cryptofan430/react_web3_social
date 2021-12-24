@@ -7,13 +7,14 @@ import data from '../../data/ticket.json';
 
 import "../../styles/components/homepage.scss";
 
-import Maestro from '../../images/Maestro.png';
-import Rici from '../../images/Rici_2.png';
-import Tikkets from '../../images/tikkets-final_2.png';
-import Unnamed_9 from '../../images/unnamed-9.png';
-import Unnamed_10 from '../../images/unnamed-10.png';
-import Unnamed_12 from '../../images/unnamed-12.png';
-import Binance_logo from '../../images/binance-coin-bnb-logo 1.png';
+import Maestro from '../../../public/images/Maestro.png';
+import Rici from '../../../public/images/Rici_2.png';
+import Tikkets from '../../../public/images/tikkets-final_2.png';
+import Unnamed_9 from '../../../public/images/unnamed-9.png';
+import Unnamed_10 from '../../../public/images/unnamed-10.png';
+import Unnamed_12 from '../../../public/images/unnamed-12.png';
+import Binance_logo from '../../../public/images/binance-coin-bnb-logo 1.png';
+
 
 const acc_data = [
     {
