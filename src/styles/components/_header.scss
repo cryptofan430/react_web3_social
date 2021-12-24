@@ -14,7 +14,7 @@
 
 .navbar {
     border-bottom: none;
-    padding: 71px 239px;
+    padding: 71px 239px 0 239px;
 }
 
 .nav-link {
@@ -32,6 +32,23 @@
 }
 
 .navbar-nav {
+    background: #040519;
+    
+    .previous-drop {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 140%; 
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-left: 100px;
+        transition: all 0.3s ease-out;
+        &:hover {
+            text-shadow: -3px 4px 7px rgba(255,255,255,1);
+        }
+    }
+
     .latest-drop {   
         width: 112px;
         height: 38px; 
@@ -49,24 +66,6 @@
         }
     }
 }
-
-.navbar-nav {
-    .previous-drop {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 200;
-        font-size: 18px;
-        line-height: 140%; 
-        color: #FFFFFF;
-        text-decoration: none;
-        margin-left: 100px;
-        transition: all 0.3s ease-out;
-        &:hover {
-            text-shadow: -3px 4px 7px rgba(255,255,255,1);
-        }
-    }
-}
-
 .active {
     padding-bottom: 0px;
     border-bottom: none;
@@ -92,7 +91,7 @@
 
 @media only screen and (max-width: 1919px) {
     .navbar {       
-        padding: 71px 180px;
+        padding: 71px 180px 0 180px;
     }
 
     .navbar-nav {
@@ -114,7 +113,7 @@
 
 @media only screen and (max-width: 1439px) {
     .navbar {       
-        padding: 71px 100px;
+        padding: 71px 100px 0 100px;
     }
 
     .navbar-nav {
@@ -136,7 +135,7 @@
 
 @media only screen and (max-width: 1199px) {
     .navbar {       
-        padding: 71px 80px;
+        padding: 71px 80px 0 80px;
     }  
 
     .navbar-nav {
@@ -159,7 +158,7 @@
 
 @media only screen and (max-width: 1067px) {   
     .navbar {       
-        padding: 71px 50px;
+        padding: 71px 50px 0 50px;
     }
 
     .navbar-nav {
@@ -182,7 +181,7 @@
 
 @media only screen and (max-width: 991px) {
     .navbar {       
-        padding: 59px 26px;
+        padding: 59px 26px 0 26px;
     }
 
     .navbar-nav {
@@ -228,7 +227,7 @@
 
 @media only screen and (max-width: 767px) {
     .navbar {        
-        padding: 59px 26px;
+        padding: 59px 26px 0 26px;
 
         .navbar-toggler {
             padding: 0px;
