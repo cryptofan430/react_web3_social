@@ -4,8 +4,8 @@ import React, {useEffect, useState} from 'react';
 
 // import '../../../styles/components/latest_drop.scss'
 
-import CopAvatar from '../../../images/cop_avatar.png';
-import BinanceIcon from '../../../images/binance-coin-bnb-logo 1.png';
+import CopAvatar from '../../../../public/images/cop_avatar.png';
+import BinanceIcon from '../../../../public/images/binance-coin-bnb-logo 1.png';
 import Button from '../../common/button';
 import NumberInput from '../../common/numberInput';
 
