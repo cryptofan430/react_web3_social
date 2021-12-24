@@ -1,70 +1,124 @@
-header{
- 
-    width: 1443px;
-    height: 72px;
-    margin: 71px auto;
-    // margin: 71px 238px 0 239px;
-    display: flex;
-
-}
-header .header-nav{
-    display: flex;
-    width: 696px;
-    height: 41px;
-    
-    margin-right: 488px;
-
-    justify-content: space-between;
-    align-items: center;
-    
-}
-header .header-nav .logo{
-    width: 239px;
-    height: 41px;
-    margin-right: 100px;
-    
-    font-family: 'HorizonOutlined';
+.logo {
+    font-family: Horizon;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 41px;
-    
-    align-items: center;
+    color: #040519;
+    -webkit-text-stroke: 0.3px #FFFFFF;  
+}
 
+.navbar {
+    border-bottom: none;
+    padding: 71px 239px;
+}
+
+.tk_outlined {
+    width: 259px;
+    height: 72px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
     color: #FFFFFF;
 }
 
-header .header-nav div{
-    
-    height: 38px;
+.latest-drop {   
+    width: 112px;
+    height: 38px; 
     font-family: Poppins;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 140%;
-    
+    color: #FFFFFF;
+   
+}
+
+.latest-drop:hover {
+    text-decoration: none;
     color: #FFFFFF;
 }
 
-header .hover-button{
-    
-    button{
-        width: 259px;
-        height: 72px;
-        font-size: 17px;
+.previous-drop {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%; 
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.previous-drop:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.active {
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;   
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0px;
+}
+
+.previous-drop {
+    margin-right: 488px;
+}
+
+.latest-drop {
+    margin-right: 100px;
+}
+
+@media only screen and (max-width: 1919px) {
+    .navbar {       
+        padding: 71px 200px;
     }
-    a{
-        font-family: Poppins;
-        
-        text-decoration: none;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 17px;
-        line-height: 140%;
-        /* or 24px */
-        align-items: center;
-        text-align: center;
-        color: #FFFFFF !important;
+
+    .previous-drop {
+        margin-right: 140px;
     }
-    
+}
+
+@media only screen and (max-width: 1439px) {
+    .navbar {       
+        padding: 71px 100px;
+    }
+
+    .previous-drop {
+        margin-right: 50px;
+    }
+
+    .latest-drop {
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 1067px) {
+    .tk_outlined {
+        width: 200px;      
+    }
+}
+
+@media only screen and (max-width: 899px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 479px) {
+
 }
