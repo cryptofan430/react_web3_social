@@ -13,13 +13,13 @@
     background-color: #0F1021;
 
     &:hover{
-        background-color: #0F1021de;
+        background-color: #2e3170de;
     }
 }
 
 .ticket_item {
     &:hover{
-        background: #18192bde;
+        background: #38496ede;
     }
 
     span{
@@ -36,6 +36,12 @@
 
         &.tick_address{
             margin-left: 147px;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+            max-width: calc(100% - 270px);
         }
 
         &.tick_count{
@@ -65,6 +71,14 @@
 
     .ticket_item span.tick_address {
         margin-left: 75px;
+    }
+
+    .ticket_item span.tick_address {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: calc(100% - 230px);
     }
 }
 

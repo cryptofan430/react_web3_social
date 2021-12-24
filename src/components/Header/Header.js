@@ -1,13 +1,25 @@
 // IMPORT PACKAGE REFERENCES
 
-import React from 'react';
+import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from '../../components/common/button';
-
+import {web3Init, onConnect, onDisconnect, ellipseAddress } from '../../services/Web3Service';
 // COMPONENT
 
-export const Header = () => (
-    <nav className="navbar navbar-expand-lg ">
+export const Header = () => {
+
+    const [walletAddress, setWalletAddress] = useState("");
+    web3Init();
+    const walletConnect = async()=> {
+        if (walletAddress == "" ){
+            setWalletAddress(await onConnect());
+        }else{
+            setWalletAddress(await onDisconnect());
+        }        
+    }
+
+
+    return <nav className="navbar navbar-expand-lg ">
         <a className="navbar-brand" href="/">
             <div className='logo'>TIKKETS</div>
         </a>
@@ -23,20 +35,20 @@ export const Header = () => (
             <ul className="navbar-nav ">
                 <li className="nav-item">
                     <div className="nav-link">
-                        <NavLink to='/' activeClassName='menu selected' className="latest-drop" exact={true}>Latest drop</NavLink>
+                        <NavLink to='/drop' activeClassName='menu selected' className="latest-drop" exact={true}>Latest drop</NavLink>
                     </div>
                 </li>
                 <li className="nav-item">
                     <div className="nav-link">
-                        <NavLink to='/zipcodes' activeClassName='menu selected' className="previous-drop">Previous drop</NavLink>
+                        <NavLink to='/pre' activeClassName='menu selected' className="previous-drop">Previous drop</NavLink>
                     </div>
                 </li>
                 <li className="nav-item">
                     <div className="nav-link">
-                        <Button button_type="tk_outlined" >But a Tikket</Button>
+                    <Button button_type="tk_outlined" onClick = {walletConnect }>{walletAddress == "" ?  "Connect" : ellipseAddress(walletAddress)}</Button>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
-);
+}

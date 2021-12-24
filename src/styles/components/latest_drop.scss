@@ -1,10 +1,18 @@
+.main-board{
+    margin-top: 243px;
+}
+.latest-drop .cop-ticket {
+    position: relative;
+    display: flex;
+    width: 1165px;
+    margin: 0 auto;
+}
+
 .latest-drop{
     // width: 100%;
-    .main-board{
-        padding: 0 388px;
-    }
+    // padding: 0 243px;
     .cop-ticket{
- 
+        
         position: relative;
         display: flex;
         .ticket-board{
@@ -13,12 +21,10 @@
                 // height: 31px;
                 font-family: 'Poppins', sans-serif;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 200;
                 font-size: 22px;
                 line-height: 140%;
                 /* identical to box height, or 31px */
-            
-            
                 color: rgba(255, 255, 255, 0.5);
             }
             .win-bored{
@@ -43,7 +49,7 @@
                 // height: 81px;
                 font-family: Poppins;
                 font-style: normal;
-                font-weight: 300;
+                font-weight: 200;
                 font-size: 19px;
                 line-height: 140%;
                 color: #FFFFFF;
@@ -175,14 +181,16 @@
     }
     
     .wallet-rank{
-        width: 100%;
+        width: 1289px;
+        margin: 0 auto;
+        padding-bottom: 100px;
         .wallet{
             margin: 0 auto;
             // margin-left: 325px;
             display: relative;
-            margin-top: 378px;
+            margin-top: 374px;
             width: 1289px;
-            height: 1109px;
+            padding-bottom: 38px;
         
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -191,7 +199,7 @@
             border-radius: 14px;
             .field{
                 margin-top:40px;
-                margin-left: 75px;
+                margin-left: 67px;
                 // margin: 40px 105px 0 93px;
                 display: flex;
                 position: relative;
@@ -205,16 +213,13 @@
                     color: #FFFFFF;
                 }
                 .rank{
-                    width: 220px;
+                    width: 240px;
                 }
-                .wallet-address{
-                    // width: 772px;
-                }
+                
                 .tikkets{
-                    
+                    right: 104px;
                     width: 373px;
                     position: absolute;
-                    right: 80px;
                     text-align: right;
                 }
             }
@@ -229,11 +234,10 @@
         }
         .page{
             margin-top: 47px;
-            position: absolute;
-            right: 81px;
-            margin-right: 386px;
             text-align: right;
-            // justify-content: flex-end;
+            width: 100%;
+            right: 70px;
+            position: relative;
         }
     }
     //common
@@ -250,12 +254,16 @@
         color: #FFFFFF;
     }
 }
-
-
+.tk_pagination {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    float: right;
+}
 
 //pagtes 
     .copped{
-        margin: 575px auto !important;
+        margin: 0 auto !important;
         padding: 0 482px;    
 
         font-family: HorizonOutlined;
@@ -265,13 +273,22 @@
         line-height: 75px;
         text-align: center;
         color: #FFFFFF;
-
+        opacity: 1;
+        transition: all 0.8s ease-out;
+        position: fixed;
+        top: -110%;
+        &.hide{
+            opacity: 0;    
+            top: calc(50vh - 120px);
+        }
+        &.show{
+            top: calc(50vh - 120px);
+            opacity: 1;
+        }
     }
     .chance{
-
-        margin: 591px auto !important;
         padding: 0 482px;
-        
+        margin: 0 auto;
         font-family: HorizonOutlined;
         font-style: normal;
         font-weight: normal;
@@ -279,11 +296,33 @@
         line-height: 75px;
         text-align: center;
         color: #FFFFFF;
-    
+        opacity: 1;
+        transition: all 0.8s ease-out;
+        position: fixed;
+        top: -110%;
+
+        &.hide{
+            opacity: 0;
+            top: calc(50vh - 120px);
+        }
+        &.show{
+            top: calc(50vh - 120px);
+            opacity: 1;
+        }
     }
     .share{
-    
-        margin: 540px auto !important;
+        position: fixed;
+        top: -110%;
+        &.hide{
+            opacity: 0;
+            top: calc(50vh - 120px);
+        }
+        &.show{
+            top: calc(50vh - 120px);
+            opacity: 1;
+        }
+        
+        margin: 0  auto !important;
         padding: 0 482px;
         .share-title{
             
@@ -306,7 +345,8 @@
                 
             }
         }
-    
+        opacity: 1;
+        transition: all 0.8s ease-out;
     }
 
 
@@ -314,8 +354,8 @@
 //page
 
 .previous{
-    margin: 354px auto !important;
-
+    margin: 183px auto !important;  //354px
+    padding: 0 213px;
     .previous-title{
         
         font-family: HorizonOutlined;
@@ -343,6 +383,16 @@
 
 }
 
+.main-board{
+    &.show{
+        opacity: 1;
+        transition: all 0.8s ease-out;
+    }
+
+    &.hide{
+        opacity: 0;
+    }
+}
 
 @media only screen and (max-width: 1919px) {
     .latest-drop{
@@ -378,8 +428,8 @@
 
 
     .previous{
-        padding: 0 100px;
-        margin: 354px auto !important;
+        padding: 0 140px;
+        
     
         .previous-title{
             
@@ -401,8 +451,7 @@
     }
 
     .share{
-    
-        margin: 540px auto !important;
+
         padding: 0 310px;
         .share-title{
             font-size: 65px;
@@ -423,13 +472,18 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 261px;    
         font-size: 65px;
         line-height: 75px;
         
     }
 
+    .chance{
+        padding: 0 261px;    
+        font-size: 65px;
+        line-height: 75px;
+        
+    }
 }
 
 @media only screen and (max-width: 1439px) {
@@ -484,7 +538,7 @@
 
     .previous{
         padding: 0 80px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -506,8 +560,6 @@
     }
 
     .share{
-    
-        margin: 540px auto !important;
         padding: 0 210px;
         .share-title{
             font-size: 65px;
@@ -528,14 +580,18 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 200px;    
         font-size: 65px;
         line-height: 75px;
         
     }
     
-
+    .chance{
+        padding: 0 200px;    
+        font-size: 65px;
+        line-height: 75px;
+        
+    }
     
 }
 
@@ -582,14 +638,14 @@
         
                 .wallet{
                     .field{
-                        margin-left: 65px;
+                        margin-left: 67px;
+
+                        .rank{
+                            width: 247px;
+                        }
                     }
                     
                 }
-                .page{
-                    
-                }
-                
             }
         }
     }
@@ -598,7 +654,7 @@
 
     .previous{
         padding: 0 60px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -620,7 +676,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 150px;
         .share-title{
             font-size: 65px;
@@ -640,13 +695,17 @@
     
     }
     .copped{
-        margin: 575px auto !important;
         padding: 0 150px;    
         font-size: 65px;
         line-height: 75px;
         
     }
-
+    .chance{
+        padding: 0 150px;    
+        font-size: 65px;
+        line-height: 75px;
+        
+    }
 }
 
 @media only screen and (max-width: 1067px) {
@@ -694,13 +753,17 @@
         
                 .wallet{
                
-                    .field .rank{
-                        width: 190px;
+                    .field{ 
+                        .rank{
+                            width: 214px;
+                        }
+
+                        .tickets{ 
+                            right: 88px;
+                            padding: 0 50px;
+                        }
                     }
-                    .tickets{
-                        // margin-left: 65px;
-                        padding: 0 50px;
-                    }
+                    
                 }
             }
         }
@@ -710,7 +773,7 @@
 
     .previous{
         padding: 0 60px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -734,7 +797,6 @@
     
     .share{
     
-        margin: 540px auto !important;
         padding: 0 85px;
         .share-title{
             font-size: 65px;
@@ -754,13 +816,17 @@
     }
 
     .copped{
-        margin: 575px auto !important;
+        padding: 0 100px;    
+        font-size: 65px;
+        line-height: 75px;
+    }
+
+    .chance{
         padding: 0 100px;    
         font-size: 65px;
         line-height: 75px;
         
     }
-    
 }
 
 @media only screen and (max-width: 899px) {
@@ -811,12 +877,15 @@
             .wallet-rank{
         
                 .wallet{
-                    .field p{
-                        font-size: 15px;
+                    .field {
+                        p{
+                            font-size: 15px;
+                        }
                     }
-                    
+
                     .tickets{
-                        // margin-left: 65px;
+                        right: 91px;
+                        margin-top: 0 !important;
                         padding: 0 50px;
                     }
                 }
@@ -826,16 +895,28 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 50px;    
         font-size: 60px;
         line-height: 75px;
         
     }
-    
+
+    .chance{
+        padding: 0 50px;    
+        font-size: 60px;
+        line-height: 75px;
+        
+    }
+
+    .latest-drop .wallet-rank .wallet .field .tikkets{
+        right: 91px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
+    .latest-drop .wallet-rank .wallet{
+        margin-top: 50px;
+    }
     .latest-drop{
         .main-board{
             padding: 0 20px ;
@@ -930,11 +1011,11 @@
                     .mobile-field{
                         display: flex;
                         margin-top: 40px;
-                        margin-left: 56px;
+                        margin-left: 37px;
                         position: relative;
                 
                         .rank{
-                            width: 185px;
+                            width: 192px;
                             height: 51px;
                             font-family: Horizon;
                             font-style: normal;
@@ -969,26 +1050,23 @@
                             color: #FFFFFF;
                             margin-bottom: 0px;        
                             position: absolute;
-                            right: 60px;
+                            right: 56px;
                         }
                     }
         
                     .tickets{
-                        // margin-left: 65px;
+                        margin-left: 20px;
                         padding: 0 15px;
+                        margin-top: 0;
                     }
                 }
-                .page{
-                    
-                }
-                
             }
         }
     }
     
     .previous{
         padding: 0 20px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -1012,7 +1090,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 20px;
         .share-title{
             font-size: 53px;
@@ -1032,13 +1109,17 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 40px;    
         font-size: 50px;
         line-height: 75px;
         
     }
-
+    .chance{
+        padding: 0 40px;    
+        font-size: 50px;
+        line-height: 75px;
+        
+    }
 }
 
 @media only screen and (max-width: 639px) {
@@ -1060,9 +1141,9 @@
         
                 .wallet{
                     .mobile-field{
-                        margin-left: 25px;
+                        margin-left: 38px;
                         .rank {       
-                            width: 185px;
+                            width: 130px;
                         }
                     
                         .wallet-address {   
@@ -1083,10 +1164,6 @@
                         padding: 0 15px;
                     }
                 }
-                .page{
-                    
-                }
-                
             }
             
         }
@@ -1094,7 +1171,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 20px;
         .share-title{
             font-size: 53px;
@@ -1113,41 +1189,38 @@
         }
     }
 
-  
- 
-  
-
 }
 
 @media only screen and (max-width: 479px) {
     .latest-drop{
-        .wallet-rank{
-
-            .wallet{
-                .mobile-field{
-                    .rank {       
-                        width: 80px;
-                    }
-                
-                    .wallet-address {   
-                        width: 85px;
-                    }
-                
-                    .tikkets {
-                        width: 100px;      
-                        position: absolute;
-                        right: 25px;
+        .main-board{
+            .wallet-rank{
+                .wallet{
+                    .mobile-field{
+                        .rank {       
+                            width: 69px;
+                        }
+                    
+                        .wallet-address {   
+                            width: 85px;
+                        }
+                    
+                        .tikkets {
+                            width: 100px;      
+                            position: absolute;
+                            right: 25px;
+                        }
                     }
                 }
+                
             }
-            
         }
     }
 
 
     .previous{
         padding: 0 20px;
-        margin: 354px auto !important;
+        
     
         .previous-title{
             
@@ -1171,7 +1244,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 20px;
         .share-title{
             font-size: 39px;
@@ -1191,11 +1263,15 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 20px;    
         font-size: 39px;
         line-height: 75px;
         
     }
-
+    .chance{
+        padding: 0 20px;    
+        font-size: 39px;
+        line-height: 75px;
+        
+    }
 }

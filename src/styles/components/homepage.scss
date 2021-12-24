@@ -397,10 +397,6 @@ img {
         padding: 0 200px;
     }
 
-    .group-1, .group-2, .group-3, .group-4, .group-5, .group-6 {
-        width: 100%;
-    }   
-
     .group-1 .title {
         height: auto;
     }
@@ -449,6 +445,10 @@ img {
         margin-right: 130px;
     }    
 
+    .group-1, .group-2, .group-3, .group-4, .group-5, .group-6 {
+        width: 100%;
+    }   
+    
     .group-1 .description {
         position: relative;
     }
@@ -485,7 +485,7 @@ img {
 
 @media only screen and (max-width: 1199px) {
    .main {
-       padding: 150px;
+       padding: 0 150px;
    }  
 
    .group-3-wallets .wallet-details-title {
@@ -512,7 +512,7 @@ img {
 
 @media only screen and (max-width: 1067px) {
     .main {
-        padding: 100px;
+        padding: 0 100px;
     }
 
     .tikkets-image img {
@@ -579,7 +579,7 @@ img {
 
 @media only screen and (max-width: 899px) {
     .main {
-        padding: 50px;
+        padding: 0 50px;
     }
 
     .tikkets-image img {
@@ -645,12 +645,8 @@ img {
     } 
 
     .tikkets-image img {
-        width: 600px;
-    }
-
-    .tikkets-image img {       
-        transform: scale(1.1);
-    }
+        width: 620px;
+    }   
 
     .tikkets-image::before {
         content: "";
@@ -659,8 +655,7 @@ img {
         height: 204.29px;
         left: 0px;
         top: -50px;
-        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
-        z-index: 1;
+        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);        
     }
 
     .tikkets-image::after {
@@ -671,8 +666,7 @@ img {
         left: 0px;
         top: 253px;
         background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
-        transform: rotate(-180deg);
-        z-index: 1;
+        transform: rotate(-180deg);       
     }
 
     .group-1 {
@@ -1062,23 +1056,22 @@ img {
         content: "";
         position: absolute;
         width: 100%;
-        height: 204.29px;
+        height: 130px;
         left: 0px;
-        top: -80px;
+        top: -15px;
         background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
-        z-index: 1;
+    
     }
 
     .tikkets-image::after {
         content: "";
         position: absolute;
         width: 100%;
-        height: 240px;
+        height: 125px;
         left: 0px;
-        top: 184px;
+        top: 185px;
         background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
-        transform: rotate(-180deg);
-        z-index: 1;
+        transform: rotate(-180deg);      
     }
 
     .group-1 .mobile-title {       
@@ -1103,8 +1096,7 @@ img {
 
 @media only screen and (max-width: 479px) {
     .tikkets-image img {
-        width: 350px;
-        transform: scale(1.1);
+        width: 355px;       
     }
 
     .tikkets-image::before {
@@ -1113,9 +1105,8 @@ img {
         width: 100%;
         height: 107.29px;
         left: 0px;
-        top: -10px;
-        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
-        z-index: 1;
+        top: -20px;
+        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);       
     }
 
     .tikkets-image::after {
@@ -1126,8 +1117,7 @@ img {
         left: 0px;
         top: 145px;
         background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
-        transform: rotate(-180deg);
-        z-index: 1;
+        transform: rotate(-180deg);       
     }    
     
     .group-3-wallets .mobile-wallet-details-title .ranking {       
@@ -1143,8 +1133,4 @@ img {
         position: absolute;
         right: 20px;
     }
-}
-
-@media only screen and (min-width: 375px) {
-    
 }

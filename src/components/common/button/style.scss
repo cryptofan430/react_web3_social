@@ -11,7 +11,7 @@
 .tk_outlined{
   &:hover{
     background-color: white;
-    color: black; 
+    color: black !important; 
     /*box-shadow: 0 0 12px gray;*/
   }
 }
