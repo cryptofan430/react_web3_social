@@ -397,10 +397,6 @@ img {
         padding: 0 200px;
     }
 
-    .group-1, .group-2, .group-3, .group-4, .group-5, .group-6 {
-        width: 100%;
-    }   
-
     .group-1 .title {
         height: auto;
     }
@@ -449,6 +445,10 @@ img {
         margin-right: 130px;
     }    
 
+    .group-1, .group-2, .group-3, .group-4, .group-5, .group-6 {
+        width: 100%;
+    }   
+    
     .group-1 .description {
         position: relative;
     }

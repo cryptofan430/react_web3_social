@@ -258,7 +258,7 @@
 
 //pagtes 
     .copped{
-        margin: 575px auto !important;
+        margin: 0 auto !important;
         padding: 0 482px;    
 
         font-family: HorizonOutlined;
@@ -268,13 +268,22 @@
         line-height: 75px;
         text-align: center;
         color: #FFFFFF;
-
+        opacity: 1;
+        transition: all 0.8s ease-out;
+        position: fixed;
+        top: -110%;
+        &.hide{
+            opacity: 0;    
+            top: calc(50vh - 120px);
+        }
+        &.show{
+            top: calc(50vh - 120px);
+            opacity: 1;
+        }
     }
     .chance{
-
-        margin: 591px auto !important;
         padding: 0 482px;
-        
+        margin: 0 auto;
         font-family: HorizonOutlined;
         font-style: normal;
         font-weight: normal;
@@ -282,11 +291,33 @@
         line-height: 75px;
         text-align: center;
         color: #FFFFFF;
-    
+        opacity: 1;
+        transition: all 0.8s ease-out;
+        position: fixed;
+        top: -110%;
+
+        &.hide{
+            opacity: 0;
+            top: calc(50vh - 120px);
+        }
+        &.show{
+            top: calc(50vh - 120px);
+            opacity: 1;
+        }
     }
     .share{
-    
-        margin: 540px auto !important;
+        position: fixed;
+        top: -110%;
+        &.hide{
+            opacity: 0;
+            top: calc(50vh - 120px);
+        }
+        &.show{
+            top: calc(50vh - 120px);
+            opacity: 1;
+        }
+        
+        margin: 0  auto !important;
         padding: 0 482px;
         .share-title{
             
@@ -309,7 +340,8 @@
                 
             }
         }
-    
+        opacity: 1;
+        transition: all 0.8s ease-out;
     }
 
 
@@ -317,7 +349,7 @@
 //page
 
 .previous{
-    margin: 354px auto !important;
+    margin: 100px auto !important;
 
     .previous-title{
         
@@ -346,6 +378,16 @@
 
 }
 
+.main-board{
+    &.show{
+        opacity: 1;
+        transition: all 0.8s ease-out;
+    }
+
+    &.hide{
+        opacity: 0;
+    }
+}
 
 @media only screen and (max-width: 1919px) {
     .latest-drop{
@@ -404,8 +446,7 @@
     }
 
     .share{
-    
-        margin: 540px auto !important;
+
         padding: 0 310px;
         .share-title{
             font-size: 65px;
@@ -426,13 +467,18 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 261px;    
         font-size: 65px;
         line-height: 75px;
         
     }
 
+    .chance{
+        padding: 0 261px;    
+        font-size: 65px;
+        line-height: 75px;
+        
+    }
 }
 
 @media only screen and (max-width: 1439px) {
@@ -509,8 +555,6 @@
     }
 
     .share{
-    
-        margin: 540px auto !important;
         padding: 0 210px;
         .share-title{
             font-size: 65px;
@@ -531,14 +575,18 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 200px;    
         font-size: 65px;
         line-height: 75px;
         
     }
     
-
+    .chance{
+        padding: 0 200px;    
+        font-size: 65px;
+        line-height: 75px;
+        
+    }
     
 }
 
@@ -623,7 +671,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 150px;
         .share-title{
             font-size: 65px;
@@ -643,13 +690,17 @@
     
     }
     .copped{
-        margin: 575px auto !important;
         padding: 0 150px;    
         font-size: 65px;
         line-height: 75px;
         
     }
-
+    .chance{
+        padding: 0 150px;    
+        font-size: 65px;
+        line-height: 75px;
+        
+    }
 }
 
 @media only screen and (max-width: 1067px) {
@@ -741,7 +792,6 @@
     
     .share{
     
-        margin: 540px auto !important;
         padding: 0 85px;
         .share-title{
             font-size: 65px;
@@ -761,13 +811,17 @@
     }
 
     .copped{
-        margin: 575px auto !important;
+        padding: 0 100px;    
+        font-size: 65px;
+        line-height: 75px;
+    }
+
+    .chance{
         padding: 0 100px;    
         font-size: 65px;
         line-height: 75px;
         
     }
-    
 }
 
 @media only screen and (max-width: 899px) {
@@ -836,12 +890,19 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 50px;    
         font-size: 60px;
         line-height: 75px;
         
     }
+
+    .chance{
+        padding: 0 50px;    
+        font-size: 60px;
+        line-height: 75px;
+        
+    }
+
     .latest-drop .wallet-rank .wallet .field .tikkets{
         right: 91px;
     }
@@ -1024,7 +1085,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 20px;
         .share-title{
             font-size: 53px;
@@ -1044,13 +1104,17 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 40px;    
         font-size: 50px;
         line-height: 75px;
         
     }
-
+    .chance{
+        padding: 0 40px;    
+        font-size: 50px;
+        line-height: 75px;
+        
+    }
 }
 
 @media only screen and (max-width: 639px) {
@@ -1102,7 +1166,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 20px;
         .share-title{
             font-size: 53px;
@@ -1176,7 +1239,6 @@
 
     .share{
     
-        margin: 540px auto !important;
         padding: 0 20px;
         .share-title{
             font-size: 39px;
@@ -1196,11 +1258,15 @@
     }
 
     .copped{
-        margin: 575px auto !important;
         padding: 0 20px;    
         font-size: 39px;
         line-height: 75px;
         
     }
-
+    .chance{
+        padding: 0 20px;    
+        font-size: 39px;
+        line-height: 75px;
+        
+    }
 }
