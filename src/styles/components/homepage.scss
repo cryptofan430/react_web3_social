@@ -485,7 +485,7 @@ img {
 
 @media only screen and (max-width: 1199px) {
    .main {
-       padding: 150px;
+       padding: 0 150px;
    }  
 
    .group-3-wallets .wallet-details-title {
@@ -512,7 +512,7 @@ img {
 
 @media only screen and (max-width: 1067px) {
     .main {
-        padding: 100px;
+        padding: 0 100px;
     }
 
     .tikkets-image img {
@@ -579,7 +579,7 @@ img {
 
 @media only screen and (max-width: 899px) {
     .main {
-        padding: 50px;
+        padding: 0 50px;
     }
 
     .tikkets-image img {
@@ -1106,8 +1106,7 @@ img {
         height: 107.29px;
         left: 0px;
         top: -20px;
-        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);
-        z-index: 1;
+        background: linear-gradient(180deg, #040519 18.75%, rgba(4, 5, 25, 0) 100%);       
     }
 
     .tikkets-image::after {
@@ -1118,8 +1117,7 @@ img {
         left: 0px;
         top: 145px;
         background: linear-gradient(180deg, #040519 27.6%, rgba(4, 5, 25, 0) 100%);
-        transform: rotate(-180deg);
-        z-index: 1;
+        transform: rotate(-180deg);       
     }    
     
     .group-3-wallets .mobile-wallet-details-title .ranking {       
@@ -1135,8 +1133,4 @@ img {
         position: absolute;
         right: 20px;
     }
-}
-
-@media only screen and (min-width: 375px) {
-    
 }

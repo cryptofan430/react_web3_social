@@ -144,29 +144,25 @@
 
 @media only screen and (max-width: 991px) {
     .navbar {       
-        padding: 59px 100px;
+        padding: 59px 26px;
     }
 
     .navbar-nav {
+        padding-left: 50px;
+        align-items: flex-start;
+
         .previous-drop {
             margin-right: 0px;
+            font-size: 25px;
+            color: #d7d7d7;
         }
 
         .latest-drop {
             margin-right: 0px;
+            font-size: 25px;
+            color: #d7d7d7;
         }
-    }
-
-    .nav-item {
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #222234;
-    }
-
-    .nav-item:first-child {
-        border-top: 1px solid #222234;
-    }
+    }  
 
     .navbar-expand-lg {
         .navbar-collapse {            
@@ -176,14 +172,21 @@
             left: 0px;
             top: 145px;
             z-index: 1;
+            box-shadow: 0px 8px 10px #8080802e;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                padding: 10px 0;
+            }
         }
     }
 
-    .nav-link {
+    .nav-link {       
         .tk_outlined {
-            height: 55px;
+            display: none;
         }
-    }
+    }      
 }
 
 @media only screen and (max-width: 767px) {
@@ -193,43 +196,5 @@
         .navbar-toggler {
             padding: 0px;
         }
-    }
-
-    .navbar-nav {
-        .previous-drop {
-            margin-right: 0px;
-        }
-
-        .latest-drop {
-            margin-right: 0px;
-        }
-    }
-
-    .nav-item {
-        padding: 10px 0;
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #222234;
-    }
-
-    .nav-item:first-child {
-        border-top: 1px solid #222234;
-    }
-
-    .navbar-expand-lg {
-        .navbar-collapse {            
-            position: fixed;
-            width: 100%;
-            margin: 0px auto;
-            left: 0px;
-            top: 145px;
-            z-index: 5;
-        }
-    }
-
-    .nav-link {
-        .tk_outlined {
-            height: 55px;
-        }
-    }
+    }   
 }
