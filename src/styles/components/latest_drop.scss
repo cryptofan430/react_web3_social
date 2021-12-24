@@ -1,16 +1,21 @@
 
+.main-board{
+    padding: 0 388px;
+}
 .cop-ticket{
-    padding-top: 413px;
-    margin-left: 388px;
-    margin-right: 368px;
-    width: 1166px;
     
-    margin: 0 auto;
+    // padding: 0 388px;
+    // margin: 200px auto;
+
+    // margin-right: 368px;
+    // width: 1166px;
+    // margin: 0 auto;
     position: relative;
     display: flex;
 }
 
 .cop-ticket .ticket-board{
+    
     // width: 854px;
     // height: 387px;
 }
@@ -31,7 +36,8 @@
     margin-top: 16px;
     // width: 854px;
     // height: 150px;
-    padding-right: 100px;
+    // margin-right: 150px;
+    // padding-right: 100px;
 
     font-family: 'Horizon';
     font-style: normal;
@@ -45,7 +51,7 @@
 }
 .cop-ticket .ticket-board .content{
     margin-top: 16px;
-    margin-right: 141px;
+    margin-right: 111px;
     // width: 597px;
     // height: 81px;
     font-family: Poppins;
@@ -60,19 +66,20 @@
     // height: 60px;
     display: flex;
     margin-top: 32px;
-}
-.cop-ticket .ticket-board .cop-ticket-group .cop-ticket-button-group{
-    
-    display: flex;
-    align-items: flex-end;
-    button{
-        width: 317px;
-        height: 60px;
-        font-size: 18px;
+    .cop-ticket-button-group{
+        display: flex;
+        align-items: center;
+        button{
+            width: 220px;
+            height: 60px;
+            font-size: 18px;
+        }
     }
- 
-    
+    .price-odds{
+        display: flex;
+    }
 }
+
 .cop-ticket .ticket-board .cop-ticket-group .price{
     border-right: solid #9B9BA3;
     // width: 256px;
@@ -92,7 +99,7 @@
         color: rgba(255, 255, 255, 0.6);
     }
     .value{
-        padding-top:12px;
+        padding-top:8px;
         font-family: Causten Round;
         font-style: normal;
         font-weight: 600;
@@ -136,7 +143,7 @@
         color: rgba(255, 255, 255, 0.6);
     }
     .value{
-        padding-top: 12px;
+        padding-top: 8px;
         font-family: Causten Round;
         font-style: normal;
         font-weight: 600;
@@ -148,7 +155,9 @@
         color: #FFFFFF;
     }
 }
-
+.cop-ticket .mobile-img{
+    display: none;
+}
 .cop-ticket .ticket-image {
     margin-top: 38px;
     // display: inline;
@@ -173,7 +182,7 @@
         font-weight: normal;
         font-size: 17px;
         line-height: 140%;
-        display: flex;
+        
         align-items: center;
         color: #FFFFFF;
         .sold-num{
@@ -185,6 +194,7 @@
 .wallet-rank .wallet{
     margin: 0 auto;
     // margin-left: 325px;
+    display: relative;
     margin-top: 378px;
     width: 1289px;
     height: 1109px;
@@ -199,7 +209,7 @@
 .wallet-rank .wallet .field{
     margin: 40px 105px 0 93px;
     display: flex;
-    
+    position: relative;
     p{
         font-family: Horizon;
         font-style: normal;
@@ -210,14 +220,16 @@
         color: #FFFFFF;
     }
     .rank{
-        width: 280px;
+        width: 220px;
     }
     .wallet-address{
-        width: 772px;
+        // width: 772px;
     }
     .tikkets{
         
         width: 373px;
+        position: absolute;
+        right: 0px;
         text-align: right;
     }
     
@@ -229,9 +241,11 @@
 }
 .wallet-rank .page{
     margin-top: 47px;
+    position: absolute;
+    right: 81px;
     margin-right: 386px;
-    display: flex;
-    justify-content: flex-end;
+    text-align: right;
+    // justify-content: flex-end;
     
 }
 
@@ -288,63 +302,373 @@
 
 
 @media only screen and (max-width: 1919px) {
-    .main-board {
-        padding: 0 111px;
-        .cop-ticket{
-            // width: 100%;
-            .ticket-board{
-                width: 100%;
-               .content{
-                    height: auto;
-               }
+    .main-board{
+        padding: 0 150px;
+    }
+    .cop-ticket{
+        width: 100%;
+    
+        .ticket-board{
+            width: 100%;
+            
+            .content{
+                height: auto;
             }
         }
-        .wallet-rank{
-            .wallet{
-                
-            }
-            .page{
-                
-            }
+        .ticket-image{
+            
+            margin-left: 100px;
+            
             
         }
-
+    }
+    .wallet-rank{
+        
+        width: 100%;
+        .wallet{
+            width: 100%;
+        }
+        
     }
 
-    
 
-    
 }
 
 @media only screen and (max-width: 1439px) {
+    .main-board{
+        padding: 0 100px;
+    }
+
     .cop-ticket{
-        .ticket-image{
-            margin-left: 100px;
+        // padding: 0 100px;
+        .ticket-board{
+            .cop-ticket-group{
+                .cop-ticket-button-group{
+                    .number-input{
+                        width: 90px;
+                    }
+                    button{
+                        width: 150px;
+                        height: 60px;
+                        font-size: 18px;
+                    }
+                }
+                .price{
+                    padding-left: 50px;
+                    padding-right: 20px;
+                }
+                .odds{
+                    padding-right: 30px;
+                }
+            }
         }
+        .ticket-image{
+            margin-left: 60px;
+            // margin-top: 90px;
+        }
+    }
+    .wallet-rank{
+        // padding: 0 100px;
+        width: 100%;
+
+        .wallet{
+            
+            
+        }
+        .page{
+            
+        }
+        
     }
     
 }
 
 @media only screen and (max-width: 1199px) {
-    
+    .main-board{
+        padding: 0 60px;
+    }
+
+    .cop-ticket{
+        // padding: 0 100px;
+        .ticket-board{
+            .win-bored{
+                font-size: 55px;
+                line-height: 65px;
+            }
+            .cop-ticket-group{
+                .cop-ticket-button-group{
+                    .number-input{
+                        width: 70px;
+                    }
+                    button{
+                        width: 140px;
+                        height: 60px;
+                        font-size: 18px;
+                    }
+                }
+                .price{
+                    padding-left: 50px;
+                    padding-right: 20px;
+                }
+                .odds{
+                    padding-right: 30px;
+                }
+            }
+        }
+        .ticket-image{
+            margin-left: 20px;
+            // margin-top: 90px;
+        }
+    }
+    .wallet-rank{
+        // padding: 0 100px;
+        width: 100%;
+
+        .wallet{
+            
+            
+        }
+        .page{
+            
+        }
+        
+    }
 }
 
 @media only screen and (max-width: 1067px) {
+    .main-board{
+        padding: 0 50px;
+    }
+    .cop-ticket{
+        // padding: 0 50px;
+        .ticket-board{
+            .win-bored{
+                font-size: 50px;
+                line-height: 60px;
+            }
+            .cop-ticket-group{
+                flex-direction: column;
+
+                .cop-ticket-button-group{
+                    .number-input{
+                        width: 97px;
+                    }
+                    button{
+                        width: 220px;
+                        
+                    }
+                }
+                .price-odds{
+                    margin-top: 30px;
+                    .price{
+                        padding-left: 30px;
+                        padding-right: 20px;
+                    }
+                    .odds{
+                        padding-right: 20px;
+                    }
+                }
+                
+            }
+        }
+        .ticket-image{
+            margin-left: 10px;
+            margin-top: 170px;
+        }
+    }
+    .wallet-rank{
+
+        .wallet{
+       
+            .field .rank{
+                width: 190px;
+            }
+            
+        }
+    }
     
 }
 
 @media only screen and (max-width: 899px) {
+    .main-board{
+        padding: 0 40px;
+    }
+    .cop-ticket{
+        // padding: 0 40px;
+        .ticket-board{
+            .win-bored{
+                font-size: 50px;
+                line-height: 60px;
+                padding-right: 70px;
+            }
+            .content{
+                margin-right: 80px;
+            }
+            .cop-ticket-group{
+                flex-direction: column;
+
+                .cop-ticket-button-group{
+                    .number-input{
+                        width: 80px;
+                    }
+                    button{
+                        width: 170px;
+                        
+                    }
+                }
+                .price-odds{
+                    margin-top: 30px;
+                    .price{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    .odds{
+                        padding-right: 25px;
+                    }
+                }
+                
+            }
+        }
+        .ticket-image{
+            margin-left: 10px;
+            margin-top: 295px;
+        }
+    }
+    .wallet-rank{
+
+        .wallet{
+            .field p{
+                font-size: 15px;
+            }
+            
+        }
+    }
     
 }
 
 @media only screen and (max-width: 767px) {
-    
+    .main-board{
+        padding: 0 20px ;
+    }
+    .cop-ticket{
+        // padding: 0 20px ;
+
+        .ticket-board{
+            .win-bored{
+                font-size: 50px;
+                line-height: 60px;
+                padding-right: 70px;
+            }
+            .mobile-img{
+                display: block;
+                img{
+                    width: 100%;
+                }
+                .sold{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 19px;    
+                    p{
+                        font-family: Poppins;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 17px;
+                        line-height: 140%;
+                        align-items: center;
+                        color: #FFFFFF;
+                        .sold-num{
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+                
+            }
+            .content{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .cop-ticket-group{
+                flex-direction: column;
+
+                .cop-ticket-button-group{
+                    .number-input{
+                        width: 35%;
+                    }
+                    button{
+                        width: 100%;
+                        
+                    }
+                }
+                .price-odds{
+                    margin-top: 30px;
+                    flex-direction: column;
+                    .price{
+                        border-right: none;
+                        display: flex;
+                        justify-content: space-between;
+                        .name{
+                            padding-top: 10px;
+                        }
+                        .value{
+                            padding: 0;
+                        }
+                    }
+                    .odds{
+                        padding-left: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        .name{
+                            padding-top: 10px;
+                        }
+                        .value{
+                            padding: 0;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .ticket-image{
+            display: none;
+        }
+    }
+    .wallet-rank{
+
+        .wallet{
+            .field p{
+                font-size: 13px;
+            }
+            .field .rank{
+                width: 160px;
+            }
+            
+        }
+        .page{
+            
+        }
+        
+    }
 }
 
 @media only screen and (max-width: 639px) {
-    
+    .main-board{
+        padding: 0 20px ;
+    }
+    .cop-ticket{
+        // padding: 0 20px ;
+
+        .ticket-board{
+            .win-bored{
+                font-size: 40px;
+                line-height: 45px;
+                padding-right: 70px;
+            }
+        }
+     
+    }
 }
 
 @media only screen and (max-width: 479px) {
+
 
 }

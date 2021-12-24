@@ -132,10 +132,19 @@ function LatestDrop () {
                         <div className='ticket-board'>
                             <Endsin />    
                             <div className='win-bored' >
-                                <p><span >WIN </span><span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}> BORED</span></p>
-                                <p><span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}>APE </span><span>#4252</span></p>
-                                
+                                <span >WIN </span><span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}> BORED </span>
+                                <span style={{color: '#3D32C3', fontFamily: 'HorizonOutlined'}}>APE </span><span>#4252</span>
                             </div>
+                            <div className='mobile-img'>
+                            
+                                <img src={ CopAvatar} alt ="avatar"></img>
+                                
+                                <div className="sold">
+                                    <p>Tikkets sold:</p>
+                                    <p><span className='sold-num'>2000</span>/10,000</p>
+                                </div>
+                            </div>
+
                             <div className='content'>
                                 We want everyone to have equal opportunity, 
                                 especially those who&apos;d normally wouldn&apos;t have a change or voice 
@@ -146,17 +155,20 @@ function LatestDrop () {
                                     <NumberInput onIncrease={ () => {handleIncrease()} } onDecrease = { () => handleDecrease()} value={tickets}></NumberInput>
                                     <Button button_type="tk_outlined" onClick = {() => {handleCop()}}>Cop a ticket</Button>
                                 </div>
-                                <div className='price'>
-                                    <div className='name'>Price</div>
-                                    <div className='value'>
-                                        <div>{(0.0062 * tickets).toFixed(4)}</div>
-                                        <div className='img'><img src={BinanceIcon}></img></div>
+                                <div className='price-odds'>
+                                    <div className='price'>
+                                        <div className='name'>Price</div>
+                                        <div className='value'>
+                                            <div>{(0.0062 * tickets).toFixed(4)}</div>
+                                            <div className='img'><img src={BinanceIcon}></img></div>
+                                        </div>
+                                    </div>
+                                    <div className='odds'>
+                                        <div className='name'>Odds</div>
+                                        <div className='value'>{(0.01 * tickets).toFixed(2)}%</div>
                                     </div>
                                 </div>
-                                <div className='odds'>
-                                    <div className='name'>Odds</div>
-                                    <div className='value'>{(0.01 * tickets).toFixed(2)}%</div>
-                                </div>
+                                
                             </div>
                         </div>
                         <div className='ticket-image'>

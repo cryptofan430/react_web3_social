@@ -16,6 +16,7 @@ export const Previous = () => (
             <span style={{fontFamily: 'Horizon'}}>FIRST DROP</span>
         </div>
 
-        <Button button_type="tk_outlined" width="420px" height="72px" fontSize = "22px" onClick = {() => {}}>Check it out</Button>      
+        <Button button_type="tk_outlined" width="420px" height="72px" fontSize = "22px" onClick = {() => {}}>Check it out</Button>
+        
     </div>
 );
