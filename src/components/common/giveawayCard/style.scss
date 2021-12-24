@@ -74,9 +74,41 @@
                 }
             }
         }
+
+        .mobile-image {
+            display: none;
+        }
     }
 }
 
 .giveaway-component:not(:first-child) {
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+    .giveaway-component {
+        width: 100%;
+        height: auto;
+
+        .details {
+            .title {
+                width: 100%;
+                height: auto;
+                margin-top: 5px;
+            }
+
+            .mobile-image {
+                display: block;
+                margin-top: 20px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .image {
+            display: none;
+        }
+    }
 }

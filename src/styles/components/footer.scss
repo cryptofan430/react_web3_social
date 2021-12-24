@@ -34,6 +34,16 @@
     color: #FFFFFF;
 }
 
+@media only screen and (max-width: 899px) {
+    .footer-logo {
+        margin-left: 70px;
+    }
+
+    .footer-all-rights-reserved {
+        margin-right: 80px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .footer {
         margin-top: 295px;

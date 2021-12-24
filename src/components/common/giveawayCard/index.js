@@ -6,6 +6,9 @@ function GiveawayCard(props) {
     return <div className="giveaway-component">
             <div className="details">
                 <div className="title">{ props.title }</div>
+                <div className="mobile-image">
+                    <img src={ props.image } alt="giveawayimage" />
+                </div>
                 <div className="tikkets">
                     <p className="name">Tikkets</p>
                     <p className="value">{ props.tikkets_value }</p>

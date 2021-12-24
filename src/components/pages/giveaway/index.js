@@ -12,8 +12,9 @@ export const After = () => (
                 <p>YOU JOINED</p>
                 <p><span>0</span>GIVEAWAYS</p>
             </div>
+            <div className="mobile-joined-giveaway">you joined<span> 0 </span>giveaways</div>
             <div className='earned'>
-                <p className='text'>With a total earned value in USD</p>
+                <p className='text'>With a total earned value in USD</p>                
                 <p className='amount'><span>$</span>0</p>
             </div>
         </div>
