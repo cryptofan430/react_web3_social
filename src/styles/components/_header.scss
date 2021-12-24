@@ -1,11 +1,13 @@
-.logo {
-    font-family: Horizon;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 41px;
-    color: #040519;
-    -webkit-text-stroke: 0.3px #FFFFFF;  
+.navbar-brand {
+    .logo {
+        font-family: Horizon;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 41px;
+        color: #040519;
+        -webkit-text-stroke: 0.3px #FFFFFF;  
+    }
 }
 
 .navbar {
@@ -13,47 +15,54 @@
     padding: 71px 239px;
 }
 
-.tk_outlined {
-    width: 259px;
-    height: 72px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 140%;
-    color: #FFFFFF;
+.nav-link {
+    .tk_outlined {
+        width: 259px;
+        height: 72px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
 }
 
-.latest-drop {   
-    width: 112px;
-    height: 38px; 
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 140%;
-    color: #FFFFFF;
-   
+.navbar-nav {
+    .latest-drop {   
+        width: 112px;
+        height: 38px; 
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF; 
+        margin-right: 100px;   
+    }
+
+    .latest-drop:hover {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 }
 
-.latest-drop:hover {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.previous-drop {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 140%; 
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.previous-drop:hover {
-    text-decoration: none;
-    color: #FFFFFF;
+.navbar-nav {
+    .previous-drop {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 140%; 
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-right: 488px;
+    }
+    
+    .previous-drop:hover {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
 }
 
 .active {
@@ -61,24 +70,22 @@
     border-bottom: none;
 }
 
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;   
-}
+.navbar-expand-lg {
+    .navbar-collapse {
+        justify-content: flex-end;   
+    }
+} 
 
 .navbar-nav {
     align-items: center;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0px;
-}
-
-.previous-drop {
-    margin-right: 488px;
-}
-
-.latest-drop {
-    margin-right: 100px;
+.navbar-expand-lg {
+    .navbar-nav {
+        .nav-link {
+            padding: 0px;
+        }
+    } 
 }
 
 @media only screen and (max-width: 1919px) {
@@ -86,8 +93,10 @@
         padding: 71px 200px;
     }
 
-    .previous-drop {
-        margin-right: 140px;
+    .navbar-nav {
+        .previous-drop {
+            margin-right: 140px;
+        }
     }
 }
 
@@ -96,29 +105,65 @@
         padding: 71px 100px;
     }
 
-    .previous-drop {
-        margin-right: 50px;
+    .navbar-nav {
+        .previous-drop {
+            margin-right: 120px;
+        }
+
+        .latest-drop {
+            margin-right: 100px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .nav-link {
+        .tk_outlined {
+            width: 200px;      
+        }
     }
 
-    .latest-drop {
-        margin-right: 40px;
+    .navbar-nav {
+        .previous-drop {
+            margin-right: 50px;
+        }
+
+        .latest-drop {
+            margin-right: 40px;
+        }
     }
 }
 
 @media only screen and (max-width: 1067px) {
-    .tk_outlined {
-        width: 200px;      
+    .nav-link {
+        .tk_outlined {
+            width: 200px;      
+        }
     }
 }
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 991px) {
+    .navbar {       
+        padding: 59px 100px;
+    }
 
+    .navbar-nav {
+        .previous-drop {
+            margin-right: 0px;
+        }
+
+        .latest-drop {
+            margin-right: 0px;
+        }
+    }
+
+    .nav-item {
+        padding: 10px 0;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-
-}
-
-@media only screen and (max-width: 479px) {
-
+    .navbar {        
+        padding: 71px 26px;
+    }
 }
