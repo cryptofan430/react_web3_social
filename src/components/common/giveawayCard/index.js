@@ -23,7 +23,7 @@ function GiveawayCard(props) {
                 </div>
             </div>
             <div className="image">
-                <img src={ props.image } alt="giveawayimage" />
+                <img src={props.image} alt="giveawayimage" />
             </div>
         </div>   
 }

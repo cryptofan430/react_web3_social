@@ -2,8 +2,8 @@
 import React from 'react';
 import '../../../styles/components/giveaway.scss';
 import GiveawayCard from '../../common/giveawayCard';
+import data from '../../../data/giveaway.json';
 
-import GiveawayImage from '../../../images/giveaway_image1.png';
 
 export const After = () => (
     <div className="after">
@@ -22,13 +22,16 @@ export const After = () => (
             <div className='active'>
                 <p className='title'>Active giveaways</p>
                 <div className='list'>
-                    <GiveawayCard 
-                        title="BAYC giveaway #001" 
-                        tikkets_value="242" 
-                        odds_value="8" 
-                        total_price_value="7260" 
-                        image={GiveawayImage} 
-                    />
+                    {data.map((data) => {
+                        return <GiveawayCard 
+                                key={data.title} 
+                                title={data.title} 
+                                tikkets_value={data.tikkets_value} 
+                                odds_value={data.odds_value} 
+                                total_price_value={data.total_price_value} 
+                                image={data.image}
+                            />
+                    })}                   
                 </div>
             </div>
             <div className='previous'>
