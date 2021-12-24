@@ -28,10 +28,21 @@
 .footer-all-rights-reserved > p {
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 22px;
     line-height: 140%;
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1919px) {
+    .footer-logo {
+        margin-left: 0px;
+    }
+
+    .footer-all-rights-reserved {
+        margin-right: 0px;
+    }
+
 }
 
 @media only screen and (max-width: 899px) {

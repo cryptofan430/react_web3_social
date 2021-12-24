@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link } from 'react-router-dom'
+import {Footer} from '../Footer/Footer';
 import Button from '../../components/common/button';
 import Ticket from '../../components/common/ticket'; 
 import Nft from '../../components/common/nft';
@@ -8,11 +9,14 @@ import data from '../../data/ticket.json';
 
 import "../../styles/components/homepage.scss";
 
-import Maestro from '../../../public/images/Maestro.png';
-import Rici from '../../../public/images/Rici_2.png';
+import Unnamed_2  from '../../../public/images/unnamed-9 2.png';
+import Unnamed_3 from '../../../public/images/unnamed-9 3.png';
+import Unnamed_1 from '../../../public/images/unnamed-9 1.png';
+import Unnamed_4  from '../../../public/images/unnamed-9 4.png';
+
+
+
 import Tikkets from '../../../public/images/tikkets-final_2.png';
-import Unnamed_9 from '../../../public/images/unnamed-9.png';
-import Unnamed_10 from '../../../public/images/unnamed-10.png';
 import Unnamed_12 from '../../../public/images/unnamed-12.png';
 import Binance_logo from '../../../public/images/binance-coin-bnb-logo 1.png';
 
@@ -148,10 +152,10 @@ const HomePage = () => (
                 </div>
             </div>
             <div className="nfts">              
-                <Nft image={Maestro} names="daniel" /> 
-                <Nft image={Unnamed_10} names="adam" />
-                <Nft image={Unnamed_9} names="andre" />
-                <Nft image={Rici} names="kozlov" />               
+                <Nft image={Unnamed_2} names="daniel" /> 
+                <Nft image={Unnamed_3} names="adam" />
+                <Nft image={Unnamed_1} names="andre" />
+                <Nft image={Unnamed_4} names="kozlov" />               
             </div>
         </div>
         <div className="group-6">
@@ -170,6 +174,7 @@ const HomePage = () => (
                 <Button button_type="tk_full" >Follow us on Twitter</Button>
             </div>
         </div>
+        <Footer />
     </div>
 );
 
