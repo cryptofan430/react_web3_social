@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link } from 'react-router-dom'
 import Button from '../../components/common/button';
 import Ticket from '../../components/common/ticket'; 
 import Nft from '../../components/common/nft';
@@ -51,7 +52,9 @@ const HomePage = () => (
                 <p className="description-label">Imagine having the chance to own an iconinc NFT? <span className="description-tikkets">Tikkets</span> allows everyone to win an rare non-fungible token for a fraction of the price.</p>
             </div>
             <div className="btns">
-                <Button button_type="tk_outlined" >But a Tikket</Button>
+                <Link to={`/drop`}>
+                    <Button button_type="tk_outlined" >But a Tikket</Button>    
+                </Link>
                 <Button button_type="tk_full" >Connect</Button>
             </div>
         </div>
@@ -83,7 +86,9 @@ const HomePage = () => (
                         </p>
                     </div>
                     <div className="tikket-button">
-                        <Button button_type="tk_outlined" >But a Tikket</Button>
+                        <Link to={`/drop`}>
+                            <Button button_type="tk_outlined" >But a Tikket</Button>    
+                        </Link>
                     </div>
                 </div>
             </div>
