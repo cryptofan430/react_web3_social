@@ -1,4 +1,6 @@
 .navbar-brand {
+    margin-right: 0px;
+
     .logo {
         font-family: Horizon;
         font-style: normal;
@@ -21,10 +23,11 @@
         height: 72px;
         font-family: Poppins;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 17px;
         line-height: 140%;
         color: #FFFFFF;
+        margin-left: 488px;
     }
 }
 
@@ -34,11 +37,11 @@
         height: 38px; 
         font-family: Poppins;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 18px;
         line-height: 140%;
         color: #FFFFFF; 
-        margin-right: 100px;   
+        margin-left: 100px;
         transition: all 0.3s ease-out;
         text-decoration: none;
         &:hover {
@@ -51,12 +54,12 @@
     .previous-drop {
         font-family: Poppins;
         font-style: normal;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 18px;
         line-height: 140%; 
         color: #FFFFFF;
         text-decoration: none;
-        margin-right: 488px;
+        margin-left: 100px;
         transition: all 0.3s ease-out;
         &:hover {
             text-shadow: -3px 4px 7px rgba(255,255,255,1);
@@ -71,7 +74,7 @@
 
 .navbar-expand-lg {
     .navbar-collapse {
-        justify-content: flex-end;   
+        justify-content: flex-start;   
     }
 } 
 
@@ -89,12 +92,22 @@
 
 @media only screen and (max-width: 1919px) {
     .navbar {       
-        padding: 71px 200px;
+        padding: 71px 180px;
     }
 
     .navbar-nav {
+        .latest-drop {
+            margin-left: 60px;
+        }
+
         .previous-drop {
-            margin-right: 140px;
+            margin-left: 60px;
+        }
+    }
+
+    .nav-link {
+        .tk_outlined {          
+            margin-left: 224px;
         }
     }
 }
@@ -106,36 +119,62 @@
 
     .navbar-nav {
         .previous-drop {
-            margin-right: 120px;
+            margin-left: 40px;
         }
 
         .latest-drop {
-            margin-right: 100px;
+            margin-left: 40px;
+        }
+    }
+
+    .nav-link {
+        .tk_outlined {          
+            margin-left: 184px;
         }
     }
 }
 
 @media only screen and (max-width: 1199px) {
-    .nav-link {
-        .tk_outlined {
-            width: 200px;      
-        }
-    }
+    .navbar {       
+        padding: 71px 80px;
+    }  
 
     .navbar-nav {
         .previous-drop {
-            margin-right: 50px;
+            margin-left: 30px;
         }
 
         .latest-drop {
-            margin-right: 40px;
+            margin-left: 30px;
+        }
+    }
+
+    .nav-link {
+        .tk_outlined {          
+            margin-left: 170px;
+            width: 200px;
         }
     }
 }
 
-@media only screen and (max-width: 1067px) {
+@media only screen and (max-width: 1067px) {   
+    .navbar {       
+        padding: 71px 50px;
+    }
+
+    .navbar-nav {
+        .previous-drop {
+            margin-left: 25px;
+        }
+
+        .latest-drop {
+            margin-left: 25px;
+        }
+    }
+
     .nav-link {
-        .tk_outlined {
+        .tk_outlined {          
+            margin-left: 165px;
             width: 200px;      
         }
     }
@@ -189,7 +228,7 @@
 
 @media only screen and (max-width: 767px) {
     .navbar {        
-        padding: 59px 26px 10px 26px;
+        padding: 59px 26px;
 
         .navbar-toggler {
             padding: 0px;

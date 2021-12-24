@@ -42,7 +42,7 @@
 .description-label {    
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 18px;
     line-height: 140%;   
     color: #FFFFFF;   
@@ -304,10 +304,10 @@ img {
     left: -25px;
     content: "";
     width: 1370px;
-    height: 750px;
+    height: 536px;
     background: linear-gradient(180deg, #040519 23.6%, rgba(4, 5, 25, 0) 100%);
-    transform: rotate(-180deg);    
-    z-index: 10;
+    transform: rotate(-180deg);   
+    top: 100px;
 }
 
 .group-4 {
